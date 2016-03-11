@@ -1,0 +1,74 @@
+
+
+
+pages:
+
+    about: ""
+    articles: Články + Přednášky
+    projects: Vybrané projekty
+    gallery: Galerie
+
+
+menu:
+
+    about: Pavol Hejný
+    articles: Články + Přednášky
+    projects: Vybrané projekty
+    gallery: Galerie
+
+
+articles:
+    types:
+        article: Článek
+        video: Video
+
+
+
+projects:
+    roles:
+        creator: Tvůrce
+        administrator: Správce
+        collaborator: Spolupracovník
+
+
+
+    collaborators:
+        ph:
+            name: 'Pavol Hejný'
+            url: 'http://pavolhejny.com/'
+        dh:
+            name: 'David Hrůša'
+            url: 'http://dave-shino.deviantart.com/'
+
+
+
+    times:
+        now: Současnost
+        months:
+            - Leden
+            - Únor
+            - Březen
+            - Duben
+            - Květen
+            - Červen
+            - Červenec
+            - Srpen
+            - Září
+            - Říjen
+            - Listopad
+            - Prosinec
+
+
+
+
+
+about:
+    name: Pavol Hejný
+    subname: 'Programátor'
+    text: ' Jmenuji se Pavol Hejný, žiju v Praze a zabývám se programováním. V současnosti pracuji v <a href="http://www.cso.cz/" target="_blank">České společnosti ornitologické</a> jako programátor, kde vytvářím aplikace pro sledování a vyhodnocování ptačí populace v ČR. Také programuji sérii her Towns. Momentálně pracuji na další verzi (<a href="http://towns.cz/" target="_blank">Towns5</a>). Také jsem vytvořil deskovou hru Věže. Občas mám o své činnosti <a href="#articles" >přednášku či napíšu článek</a>. '
+
+
+galleries:
+    fractals: Fraktály
+    paintings: Kresby
+
