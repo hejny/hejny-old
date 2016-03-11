@@ -1,0 +1,226 @@
+
+
+
+
+towns5:
+    name:
+        cs: Towns 5
+    color: '#151537'
+    description:
+        cs:
+    roles:
+        ph: creator
+
+
+    start: '6.2015'
+
+    url: towns.cz
+
+towns4:
+    name:
+        cs: Towns 4
+    color: '#151537'
+    description:
+        cs:
+    roles:
+        ph: creator
+
+    start: '6.2011'
+    end: '6.2015'
+
+
+    url: 'https://www.facebook.com/hejny/media_set?set=a.4537869370905.2154776.1416254989&type=3'
+
+
+
+towns3:
+    name:
+        cs: Towns 3
+    color: '#151537'
+    description:
+        cs:
+    roles:
+        ph: creator
+
+
+    start: '2.2009'
+    end: '8.2009'
+
+    url: 'https://www.facebook.com/hejny/media_set?set=a.1087741439863.2016185.1416254989&type=3'
+
+
+
+towns2:
+    name:
+        cs: Towns 2
+    color: '#151537'
+    description:
+        cs:
+    roles:
+        ph: creator
+
+    start: '2.2008'
+    end: '2.2009'
+
+    url: 'https://www.facebook.com/hejny/media_set?set=a.10205480393795354.1073741882.1416254989&type=3'
+
+
+towns1:
+    name:
+        cs: Towns 1
+    color: '#151537'
+    description:
+        cs: 'aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa '
+    roles:
+        ph: creator
+        dh: collaborator
+
+
+    start: '6.2007'
+    end: '2.2008'
+
+
+    url: 'https://www.facebook.com/hejny/media_set?set=a.10205480360514522.1073741881.1416254989&type=3&pnref=story'
+
+
+
+
+towers:
+    name:
+        cs: Věže
+    color: '#FFA826'
+    description:
+        cs:
+    roles:
+        ph: creator
+
+
+    start: '2.2011'
+    end: '2.2011'
+
+    url: 'https://www.facebook.com/hejny/media_set?set=a.1957571225064.2100361.1416254989&type=3'
+
+
+logic:
+    name:
+        cs: Logic
+    color: '#ffffff'
+    description:
+        cs:
+    roles:
+        ph: creator
+
+
+    start: '2.2007'
+    end: '6.2007'
+
+    url: ''
+
+
+
+
+kunraticky-les:
+    name:
+        cs: Kunratický les
+    color: '#6CC424'
+    description:
+        cs: 'aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa'
+    roles:
+        ph: creator
+
+    start: '5.2010'
+    end: '6.2010'
+
+    url: les.towns.cz
+
+
+fractals:
+    name:
+        cs: Fraktály
+    color: '#000000'
+    description:
+        cs:
+    roles:
+        ph: creator
+
+    start: '6.2013'
+
+    url: fractal.towns.cz
+
+graph:
+    name:
+        cs: 3D Graf
+    color: '#1A2BEF'
+    description:
+        cs:
+    roles:
+        ph: creator
+
+    start: '10.2012'
+    end: '6.2013'
+
+    url: 3d.towns.cz
+
+
+
+avif-mobile:
+    name:
+        cs: Avif Mobile
+    color: '#ABC0E1'
+    description:
+        cs:
+    roles:
+        ph: creator
+
+
+    start: '5.2015'
+    end: '12.2015'
+
+    url: 'https://play.google.com/store/apps/details?id=czavif.httpbirds.avifmobile'
+
+
+
+avif:
+    name:
+        cs: Avif
+    color: '#ABC0E1'
+    description:
+        cs:
+    roles:
+        ph: administrator
+
+    start: '9.2014'
+
+    url: birds.cz
+
+
+
+cso-hry:
+    name:
+        cs: Ptáci ve městech
+    color: '#ECEAEB'
+    description:
+        cs:
+    roles:
+        ph: creator
+
+    start: '12.2015'
+    end: '1.2016'
+
+    url: birds.cz
+
+
+
+bezpecne-zastavky:
+    name:
+        cs: Bezpečné zastávky
+    color: '#ECEAEB'
+    description:
+        cs:
+    roles:
+        ph: creator
+
+    start: '1.2016'
+    end: '3.2016'
+
+    url: birds.cz
