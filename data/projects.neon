@@ -7,7 +7,7 @@ towns5:
         cs: Towns 5
     color: '#151537'
     description:
-        cs:
+        cs: 'Poslední, právě vyvíjená verze Towns s otevřeným API. Hráči si zde budou moct vytvořit cokoliv od vlastních prvků na budovách až po celá impéria.'
     roles:
         ph: creator
 
@@ -21,15 +21,12 @@ towns4:
         cs: Towns 4
     color: '#151537'
     description:
-        cs:
+        cs: 'Dlouho běžící online hra s izometrickou mapou. 3D budovami, spojováním budov a '
     roles:
         ph: creator
 
     start: '6.2011'
     end: '6.2015'
-
-
-    url: 'https://www.facebook.com/hejny/media_set?set=a.4537869370905.2154776.1416254989&type=3'
 
 
 
@@ -38,7 +35,7 @@ towns3:
         cs: Towns 3
     color: '#151537'
     description:
-        cs:
+        cs: 'Nedokončený projekt ve Flashy . 3D budovy.'
     roles:
         ph: creator
 
@@ -46,23 +43,18 @@ towns3:
     start: '2.2009'
     end: '8.2009'
 
-    url: 'https://www.facebook.com/hejny/media_set?set=a.1087741439863.2016185.1416254989&type=3'
-
-
 
 towns2:
     name:
         cs: Towns 2
     color: '#151537'
     description:
-        cs:
+        cs: 'Druhá verze s izometrickou mapou, vylepšeným designem, vygenerovaným ostrovem 200x200 políček.'
     roles:
         ph: creator
 
     start: '2.2008'
     end: '2.2009'
-
-    url: 'https://www.facebook.com/hejny/media_set?set=a.10205480393795354.1073741882.1416254989&type=3'
 
 
 towns1:
@@ -70,7 +62,7 @@ towns1:
         cs: Towns 1
     color: '#151537'
     description:
-        cs: 'aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa '
+        cs: 'První ze série her Towns. Jednoduchá strategická hra s 2D mapou 100x100 políček. '
     roles:
         ph: creator
         dh: collaborator
@@ -80,8 +72,6 @@ towns1:
     end: '2.2008'
 
 
-    url: 'https://www.facebook.com/hejny/media_set?set=a.10205480360514522.1073741881.1416254989&type=3&pnref=story'
-
 
 
 
@@ -90,7 +80,7 @@ towers:
         cs: Věže
     color: '#FFA826'
     description:
-        cs:
+        cs: 'Desková stavební hra hraná v reálném čase. Ještě ne zcela dokončený projekt.'
     roles:
         ph: creator
 
@@ -98,23 +88,19 @@ towers:
     start: '2.2011'
     end: '2.2011'
 
-    url: 'https://www.facebook.com/hejny/media_set?set=a.1957571225064.2100361.1416254989&type=3'
-
 
 logic:
     name:
         cs: Logic
     color: '#ffffff'
     description:
-        cs:
+        cs: 'Logická bludišťová plošinovka pro známé programovatelné kalkulačky TI-89. Součástí hry je i editor a mnoho vytvořených úrovní.'
     roles:
         ph: creator
 
 
     start: '2.2007'
     end: '6.2007'
-
-    url: ''
 
 
 
@@ -124,7 +110,7 @@ kunraticky-les:
         cs: Kunratický les
     color: '#6CC424'
     description:
-        cs: 'aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa'
+        cs: 'Přes 500 propojených 360° snímků z Kunratického lesa z jara 2010.'
     roles:
         ph: creator
 
@@ -139,7 +125,7 @@ fractals:
         cs: Fraktály
     color: '#000000'
     description:
-        cs:
+        cs: 'Generátor fraktálů odvozených z Mandelbrotovi množiny.'
     roles:
         ph: creator
 
@@ -152,7 +138,7 @@ graph:
         cs: 3D Graf
     color: '#1A2BEF'
     description:
-        cs:
+        cs: '2D / 3D program pro vykreslování grafů jedné nebo dvou funkcí. Netradiční možnost dinamicky měnit barvu a tloušťku čas podle vzorce.'
     roles:
         ph: creator
 
@@ -162,15 +148,30 @@ graph:
     url: 3d.towns.cz
 
 
+drawing:
+    name:
+        cs: Kreslení
+    color: '#1A2BEF'
+    description:
+        cs: 'Jednoduchý kreslící bitmapový program s několika speciálními funkcemi např. paprsčité kreslení čar a obdélníků nebo kreslení pomocí textu.'
+    roles:
+        ph: creator
+
+    start: '5.2012'
+    end: '6.2012'
+
+    url: kresleni.towns.cz
+
 
 avif-mobile:
     name:
         cs: Avif Mobile
     color: '#ABC0E1'
     description:
-        cs:
+        cs: 'Mobilní aplikace pro AviFaunistickou databázi ČR. Projekt České společnosti Ornitologické'
     roles:
-        ph: creator
+        ph: backend
+        longhorn: frontend
 
 
     start: '5.2015'
@@ -185,7 +186,7 @@ avif:
         cs: Avif
     color: '#ABC0E1'
     description:
-        cs:
+        cs: 'AviFaunistická databáze ČR, Projekt České společnosti Ornitologické'
     roles:
         ph: administrator
 
@@ -200,7 +201,7 @@ cso-hry:
         cs: Ptáci ve městech
     color: '#ECEAEB'
     description:
-        cs:
+        cs: '3 jednoduché minihry pro Českou společnost Ornitologickou'
     roles:
         ph: creator
 
@@ -216,7 +217,7 @@ bezpecne-zastavky:
         cs: Bezpečné zastávky
     color: '#ECEAEB'
     description:
-        cs:
+        cs: 'Projekt České společnosti Ornitologické'
     roles:
         ph: creator
 

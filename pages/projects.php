@@ -74,25 +74,29 @@ $zi=500;
 
 foreach($projects as $project):
 
-    if($project['url']){
+    if(isset($project['url'])){
         $target='_blank';
 
         if(substr($project['url'],0,4)!=='http'){
             $project['url']='http://'.$project['url'];
         }
 
-    }else{
+
+        $project['url_']=str_replace(
+            array('http://','https://'),
+            '',
+            $project['url']
+        );
+
+
+
+    }/*else{
 
         $project['url']='#'.$project['key'];
         $target='_self';
 
-    }
+    }*/
 
-    $project['url_']=str_replace(
-        array('http://','https://'),
-        '',
-        $project['url']
-    );
 
 
 
@@ -145,6 +149,7 @@ foreach($projects as $project):
         "z-index:$zi;".
         ($file?"background: url('$file');":'').
         "background-size: 100% auto;".
+        "background-repeat: no-repeat;".
         "position: absolute;".
         "top: ".round($top_start)."px;".
         "left: calc(50% + ".round($left/*-(($t%4)<2?-20:20)*/)."px - 131px);".
@@ -181,6 +186,11 @@ foreach($projects as $project):
 
 
         //$submenu[$project['key']]=$project['name'][$LANGUAGE];
+
+
+
+        $is_web=isset($project['url']);
+        $is_gallery=isset($MESSAGES['galleries'][$project['key']]);
     ?>
 
 
@@ -192,28 +202,43 @@ foreach($projects as $project):
 
             <div class="more">
 
-
+                <?php if($is_web || $is_gallery): ?>
                 <p>
+                    <?php if($is_web): ?>
                     <a href="<?=$project['url']?>" target="<?=$target?>" >
                         <button>Web</button>
                     </a>
+                    <?php endif; ?>
 
+                    <?php if($is_gallery): ?>
                     <a href="#gallery-<?=$project['key']?>">
                         <button>Galerie</button>
                     </a>
+                    <?php endif; ?>
 
                 </p>
+                <?php endif; ?>
 
 
-
+                <?php if(count($project['roles'])>1): ?>
                 <table>
                     <?php foreach($project['roles'] as $person=>$role): ?>
                     <tr>
-                        <th><?=$MESSAGES['projects']['roles'][$role];?></th>
-                        <td><?=$MESSAGES['projects']['collaborators'][$person]['name'];?></td>
+                        <th><?=$MESSAGES['projects']['roles'][$role];?>:</th>
+                        <td>
+                            <a
+                                href="<?=$MESSAGES['projects']['collaborators'][$person]['url'];/*todo to calaborators*/?>"
+                                target="_blank"
+                            >
+                                <?=$MESSAGES['projects']['collaborators'][$person]['name'];?>
+                            </a>
+                        </td>
                     </tr>
                     <?php endforeach; ?>
                 </table>
+                <?php endif; ?>
+
+                <br>
 
 
 

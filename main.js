@@ -102,14 +102,21 @@ function hashChanged(hash){
 
     //alert(hash);
 
-    $('.project-selected').not(hash).removeClass('project-selected', 666);
+    $('.project-selected').removeClass('project-selected', 200);
 
+    var id1=$('.project-selected').attr('id');
+    var id2=$(hash).attr('id');
 
-    if($(hash).hasClass('project')){
+    if(id1!=id2){
+        if($(hash).hasClass('project')){
 
-        $(hash).addClass('project-selected',666);
+            $(hash).addClass('project-selected',200);
 
+        }
+    }else{
+        history.pushState(null, null, '#');
     }
+
 }
 
 

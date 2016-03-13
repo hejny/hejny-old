@@ -85,6 +85,7 @@ $MESSAGES = Nette\Neon\Neon::decode(file_get_contents($file));
 $pages=array(
     'about'=>array(),
     'articles'=>array(),
+    //'social'=>array(),
     'projects'=>array(),
     'gallery'=>array(),
 
