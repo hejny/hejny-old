@@ -10,6 +10,11 @@ foreach($folders as $folder):
     $submenu[$gallery]=$MESSAGES['galleries'][$gallery];
     echo('<h3 id="gallery-'.$gallery.'">'.$MESSAGES['galleries'][$gallery].'</h3>');
 
+    if(isset($projects_asoc[$gallery])){
+        echo('<button onclick="scroll_to(\'#projects-'.$gallery.'\')">Zobrazit projekt</button><br>');
+    }
+
+
     foreach($images as $image):
 
 
