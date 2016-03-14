@@ -88,6 +88,7 @@ $pages=array(
     //'social'=>array(),
     'projects'=>array(),
     'gallery'=>array(),
+    'contact'=>array(),
 
 );
 
@@ -166,8 +167,12 @@ $pages=array(
 
     <nav id="menu">
 
-        <ul>
+        <a href="#about" id="menu-title">
+            <img src="http://1.gravatar.com/avatar/3d98c15957c5f5dd227e53dbc7cbb60d?s=30&r=pg&d=mm">
+            <h1>Pavol Hejný</h1>
+        </a>
 
+        <ul>
             <?php
 
             /*print_r($pages);*/
@@ -177,22 +182,27 @@ $pages=array(
                 /*print_r($page);
                 print_r($submenu);*/
 
-                ?>
-                <li>
-                    <a href="#<?=$page?>"><?=$MESSAGES['menu'][$page]?></a>
+                if(isset($MESSAGES['menu'][$page])) {
+                    ?>
+                    <li>
+                    <a href="#<?= $page ?>"><?= $MESSAGES['menu'][$page] ?></a>
+
+
+                    <!--<ul>
+                        <?php /*foreach($submenu as $subpage=>$subname): */
+                    ?>
+                            <li><a href="#<?/*=$page.'-'.$subpage*/
+                    ?>"><?/*=$subname*/
+                    ?></a></li>
+                        <?php /*endforeach; */
+                    ?>
+                    </ul>-->
 
 
 
-                    <ul>
-                        <?php foreach($submenu as $subpage=>$subname): ?>
-                            <li><a href="#<?=$page.'-'.$subpage?>"><?=$subname?></a></li>
-                        <?php endforeach; ?>
-                    </ul>
-
-
-
-                </li>
-                <?php
+                    </li>
+                    <?php
+                }
 
             }
 
@@ -214,16 +224,16 @@ $pages=array(
             </li>*/ ?>
         </ul>
 
+        <div id="languages" >
+            <a href="./en"><img src="locale/en.png"></a>
+            <a href="./cs"><img src="locale/cs.png"></a>
+
+        </div>
     </nav>
 
 
 
 
-    <div id="languages" >
-        <a href="./en"><img src="locale/en.png"></a>
-        <a href="./cs"><img src="locale/cs.png"></a>
-
-    </div>
 
 
 

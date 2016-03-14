@@ -3,20 +3,22 @@
 
 pages:
 
-    about: ""
+    about: ''
     articles: Články + Přednášky
     social: Twitter
     projects: Vybrané projekty
     gallery: Galerie
+    contact: Kontakt
 
 
 menu:
 
-    about: Pavol Hejný
+    #about: ''
     articles: Články + Přednášky
     social: Twitter
     projects: Vybrané projekty
     gallery: Galerie
+    contact: Kontakt
 
 
 articles:
