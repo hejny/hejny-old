@@ -62,7 +62,7 @@ $timeline_start=mktime(0, 0, 0, 1, 1,date("Y"));
 
 function time2top($time){
     global $timeline_start;
-    return(($timeline_start-$time)/(3600*24*2)+900);
+    return(($timeline_start-$time)/(3600*24*2));
 }
 
 
@@ -133,7 +133,7 @@ foreach($projects as $project):
     $top_end=time2top($project['end']);////($timeline_start-$project['end'])/(3600*24*2)+800;
 
 
-    $zi++;
+    $zi--;
     $t++;
     $left=150*$i;
 
@@ -148,7 +148,7 @@ foreach($projects as $project):
     $style=
         "z-index:$zi;".
         ($file?"background: url('$file');":'').
-        "background-size: 100% auto;".
+        "background-size: cover;".
         "background-repeat: no-repeat;".
         "position: absolute;".
         "top: ".round($top_start)."px;".
@@ -194,7 +194,7 @@ foreach($projects as $project):
     ?>
 
 
-    <div id="projects-<?=$project['key']?>" onclick="scroll_to('#projects-<?=$project['key']?>')" class="project" style="<?=$style?>" >
+    <div id="projects-<?=$project['key']?>" onclick="hash_to('#projects-<?=$project['key']?>')" class="project projects-top" style="<?=$style?>" >
         <div>
             <h3><?=$project['name'][$LANGUAGE]?></h3><br>
             <?php if($role): ?><i><?=$role?></i><?php endif; ?>
@@ -203,7 +203,7 @@ foreach($projects as $project):
             <div class="more">
 
                 <?php if($is_web || $is_gallery): ?>
-                <p>
+                <p class="project-buttons">
                     <?php if($is_web): ?>
                     <a href="<?=$project['url']?>" target="<?=$target?>" >
                         <button>Web</button>
@@ -238,11 +238,13 @@ foreach($projects as $project):
                 </table>
                 <?php endif; ?>
 
-                <br>
+                <p class="project-description">
+                    <?=$project['description'][$LANGUAGE]?>
+                </p>
 
 
 
-                <?=$project['description'][$LANGUAGE]?>
+
 
 
 
@@ -256,8 +258,8 @@ foreach($projects as $project):
 
 
     <a href="#projects-<?=$project['key']?>" >
-        <div class="timeline" style="<?=$style_t?>" ></div>
-        <div class="timeline_end" style="<?=$style_te?>" ></div>
+        <div class="timeline projects-top" style="<?=$style_t?>" ></div>
+        <div class="timeline_end projects-top" style="<?=$style_te?>" ></div>
     </a>
 
 
@@ -301,7 +303,7 @@ for($year=2006;$year<=date("Y");$year++):
     "";
 
 ?>
-    <div class="year" style="<?=$style_y?>" ><?=$year?></div>
+    <div class="year projects-top" style="<?=$style_y?>" ><?=$year?></div>
 <?php
 
 
@@ -314,11 +316,12 @@ endfor;
 $style_placeholder=
     "display:block;".
     "width: 100%;".
-    "height:".round(time2top(mktime(0, 0, 0, 6, 15, 2006+4)))."px;".
+    "height:".round(time2top(mktime(0, 0, 0, 6, 15, 2006)))."px;".
     //"background-color: #ffffff;".
     //"border-right: 2px solid #777777;".
     "";
 ?>
 
 
-<div class="placeholder" style="<?=$style_placeholder?>" ></div>
+<div class="projects-placeholder" style="<?=$style_placeholder?>" ></div>
+

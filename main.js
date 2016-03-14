@@ -14,7 +14,7 @@ $(function() {
 
             if (target.length) {
                 $('html,body').animate({
-                    scrollTop: target.offset().top
+                    scrollTop: target.offset().top-50
                 }, 666);
 
                 return false;
@@ -27,15 +27,21 @@ $(function() {
 
 function scroll_to(hash){
 
-    history.pushState(null, null, hash);
-    hashChanged(hash);
+    hash_to(hash);
 
     $('html,body').animate({
-        scrollTop: $(hash).offset().top-100
+        scrollTop: $(hash).offset().top-50
     }, 666);
 
 }
 
+
+function hash_to(hash){
+
+    history.pushState(null, null, hash);
+    hashChanged(hash);
+
+}
 
 //============================================================================================
 
@@ -120,6 +126,17 @@ function hashChanged(hash){
 }
 
 
+//============================================================================================
+
+
+
+$(function(){
+
+    var top= $('.projects-placeholder').offset().top-(-50);
+    $('.projects-top').css('top','+='+top);
+    $('.projects-top').show();
+
+});
 
 //============================================================================================
 
