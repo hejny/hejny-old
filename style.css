@@ -37,19 +37,8 @@ button:hover {
     background-color: black; }
 
 
-#languages {
-
-    display:block;
 
 
-    position: fixed;
-    top: 0px;
-    left: 30px;
-
-    z-index: 100;
-
-
-}
 
 #menu {
 
@@ -63,71 +52,211 @@ button:hover {
     left: 0px;
 
 
-    width: calc( 40% - 40px );
-    max-width: 450px;
-    height: 100vh;
+    width: 100%;
+    height: 30px;
 
     background-color: #000000;
     background: url("data/backgrounds/menu.png");
 
 
-    text-align: right;
-
-
-    padding: 10px;
-    padding-right: 30px;
-    padding-top: 30px;
+    padding: 5px;
     margin: 0px;
 
 
-    font-size: 1em;
+    font-size: 1.1em;
 
-    box-shadow: rgba(0,0,0,0.5) 2px 0px 2px;
+
+    box-shadow: rgba(0,0,0,0.5) 0px 2px 2px;
+
+    /*text-align: center;*/
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    overflow: hidden;
+
+}
+
+#menu *{
+    color: #cccccc;
+    text-decoration: none;
+    text-shadow: 0px 0px 1px #000000;
+
+
+}
+
+#menu-title, #languages {
+    margin-top: -13px;
+}
+
+
+#menu-title{
+
+    position: absolute;
+    left:4px;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    /*font-size: 1.3em;*/
+
+    /*border: 1px solid #ff0000;*/
+
+
+
+
+}
+
+#menu-title img{
+
+    /*display: none;*/
+
+    height: 25px;
+    border-radius: 100px;
+
+    margin-right: 20px;
+    margin-left: 3px;
+
+    /*border: 2px solid #444444;*/
+
+
+
+}
+
+#menu-title h1{
+
+    display: inline-block;
+
+    font-size: 1em;
+    font-weight: normal;
+    margin: 0;
+    padding:0;
+
+
+    vertical-align: top;
 
 
 }
 
 
-#menu ul li{
+#languages {
+
+
+    position: absolute;
+    right:25px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    /* border: 1px solid #ff0000;*/
+
+}
+
+#languages img {
+
+    display: inline-block;
+    margin-left: 5px;
+
+}
+
+
+#menu ul{
+
+
+    display: inline-block;
     list-style: none;
+
+    font-size: 1em;
+    margin: 0px;
+    padding: 0px;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+
+
+    /*border: 1px solid #ff0000;*/
+
+
+}
+
+#menu ul li{
+
+    display: inline-block;
+    list-style: none;
+    font-size: 1em;
+
 
 }
 
 #menu ul li a{
 
-    font-size: 1.3em;
-
-    color: #cccccc;
-    text-decoration: none;
-
-    text-shadow: 0px 0px 1px #000000;
-
-}
+    display: inline-block;
 
 
-#menu ul li:first-child{
+    width: 200px;
+    height: 100%;
+    border-left: 1px solid #cccccc;
 
-    font-size: 1.6em;
+
 
 }
 
 
-#menu ul li ul li a{
+#menu ul li:first-child a{
+    border-left: none;
+}
 
+
+#menu ul li a img{
+
+    display: inline-block;
     font-size: 1em;
 
-    color: #aaaaaa;
-    text-decoration: none;
-
-    text-shadow: 0px 0px 1px #000000;
+    height: 100%;
+    border-radius: 100px;
 
 }
 
-#menu ul li ul li:first-child{
 
-    font-size: 1em;
+
+
+
+
+
+
+@media (max-width: 1111px) {
+    #menu ul {
+        display: none;
+    }
 
 }
+
+
+@media (max-width: 300px) {
+    #menu {
+        display: none;
+    }
+
+
+}
+
+
+
+
+
+
+
 
 
 .overlay {
@@ -151,15 +280,17 @@ button:hover {
 
     top: 0px;
     bottom: 0px;
-    left: 490px;
+    left: 0px;
     right: 0px;
 
     /*box-shadow: #000000 0 0 15px 0;*/
 
     /*background-color: #cccccc;*/
 
-    /*width: 80px;
-    height: 80px;
+    width: 100vw;
+    height: 100vh;
+
+    /*
     max-width: 800px;
     max-height: 800px;*/
 
@@ -180,8 +311,10 @@ button:hover {
 
 .popup-window .content{
 
-    max-width: calc(100% - 100px);
-    max-height: calc(100% - 100px);
+    /*max-width: calc(100% - 100px);
+    max-height: calc(100% - 100px);*/
+
+    height: calc(100% - 100px);
 
 }
 
@@ -254,16 +387,16 @@ button:hover {
     top: 0px;
     right:0px;
 
-    /*width: calc(100% - 450px);*/
-    width: calc(100vw - 490px);/*todo why 490?*/
+
+    width: 100%;
     min-width: 60%;
-    /*height: 5000px;*/
+
 
     display: inline-block;
 
     text-align: center;
 
-    padding: 0px;
+
 
     margin: 0px;
 
@@ -277,21 +410,6 @@ button:hover {
 }
 
 
-@media (max-width: 600px) {
-    #menu {
-        display: none;
-    }
-    #pages {
-        width: 100%;
-
-        left: 0px;
-
-        margin: 0px;
-        padding: 0px;
-
-    }
-
-}
 
 
 
@@ -318,6 +436,14 @@ button:hover {
 
 }
 
+
+#gallery{
+    width: 100%;
+}
+
+#about{
+    padding-top:10vh;
+}
 
 
 
@@ -386,6 +512,8 @@ button:hover {
 }
 
 
+
+
 #articles a:nth-child(odd) {
     background: rgba(146, 146, 146, 0.10);
 }
@@ -408,7 +536,7 @@ button:hover {
 
 
 
-@media (max-width: 1250px) {
+@media (max-width: 800px) {
 
     .timeline {
         display: none!important;
