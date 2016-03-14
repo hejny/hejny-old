@@ -14,7 +14,7 @@ foreach($folders as $folder):
         echo('<button onclick="scroll_to(\'#projects-'.$gallery.'\')">Zobrazit projekt</button><br>');
     }
 
-
+    echo('<div class="image-group">');
     foreach($images as $image):
 
 
@@ -31,6 +31,9 @@ foreach($folders as $folder):
 
 
     endforeach;
+    echo('</div>');
+
+
 endforeach;
 
 ?>

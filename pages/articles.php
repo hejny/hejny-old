@@ -18,12 +18,20 @@
     ?>
 
 
-    <a href="<?=$article['url']?>" class="article" target="_blank">
-        <?=$article['title']?> <i>(<?=$type?>, <?=$site?>)</i>
-    </a>
-    <!--<article width="100%" height="500">
-        <iframe width="100%" height="500" src="https://www.youtube.com/embed/_x2nvz6aQY4?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-    </article>-->
+
+    <article>
+
+        <a href="<?=$article['url']?>" target="_blank">
+            <?=$article['title']?> <i>(<?=$type?>, <?=$site?>)</i>
+        </a>
+        <!--<p>
+            <iframe width="100%" height="500" src="<?/*=$article['url']*/?>" frameborder="0" allowfullscreen></iframe>
+        </p>-->
+
+
+    </article>
+
+
 
 
 
