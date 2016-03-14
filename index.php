@@ -161,8 +161,13 @@ $pages=array(
 
 
         ?>
-    </main>
 
+
+        <footer>
+            @ Pavol Hejný
+        </footer>
+
+    </main>
 
 
     <nav id="menu">
