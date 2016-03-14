@@ -154,7 +154,7 @@ foreach($projects as $project):
         "top: ".round($top_start)."px;".
         "left: calc(50% + ".round($left/*-(($t%4)<2?-20:20)*/)."px - 131px);".
         "border: 3px solid {$project['color']};".
-        "";
+        "display: none;";
 
 
 
@@ -162,7 +162,7 @@ foreach($projects as $project):
     $style_t=
         "z-index:".($zi-100).";".
         "position: absolute;".
-        "display:block;".
+        "display:none;".
         "width:3px;".
         "background-color: {$project['color']};".
         "top: ".round($top_end+5)."px;".
@@ -173,7 +173,7 @@ foreach($projects as $project):
     $style_te=
         "z-index:".($zi-90).";".
         "position: absolute;".
-        "display:block;".
+        "display:none;".
         "width:10px;".
         "height:10px;".
         "border-radius:10px;".
@@ -288,7 +288,7 @@ for($year=2006;$year<=date("Y");$year++):
     $style_y=
     "z-index:".($zi).";".
     "position: absolute;".
-    "display:block;".
+    "display:none;".
     "height:30px;".
     "width: ".round(abs($top_end-$top_start))."px;".
     //"background-color: #cccccc;".
