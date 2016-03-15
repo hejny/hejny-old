@@ -164,7 +164,7 @@ $pages=array(
 
 
         <footer>
-            @ Pavol Hejný
+            @ <?=date('Y')?> Pavol Hejný
         </footer>
 
     </main>

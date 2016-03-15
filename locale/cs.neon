@@ -77,9 +77,15 @@ about:
 
 
 galleries:
-    fractals: Fraktály
-    paintings: Kresby
     drawing: Kreslení
     aliasing: Aliasing
+    fractals: Fraktály
     graph: 3D graf
-
+    paintings: Kresby
+    kunraticky-les: 'Kunratický les'
+    towns1: 'Towns 1'
+    towns2: 'Towns 2'
+    towns3: 'Towns 3'
+    towns4: 'Towns 4'
+    towns5: 'Towns 5'
+    logic: 'Logic'
