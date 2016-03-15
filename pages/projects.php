@@ -66,6 +66,8 @@ function time2top($time){
 }
 
 
+$projects_keys=array();
+
 
 //print_r($projects);
 $i=-1;
@@ -73,6 +75,8 @@ $t=0;
 $zi=500;
 
 foreach($projects as $project):
+
+    $projects_keys[]=$project['key'];
 
     if(isset($project['url'])){
         $target='_blank';
