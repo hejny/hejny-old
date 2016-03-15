@@ -295,11 +295,10 @@ for($year=2006;$year<=date("Y");$year++):
     "display:none;".
     "height:30px;".
     "width: ".round(abs($top_end-$top_start))."px;".
-    //"background-color: #cccccc;".
-    "border-left: 2px solid #777777;".
+    ($year!=date("Y")?"border-left: 2px solid #777777;":'').
     //"border-right: 2px solid #777777;".
     "top: ".round($top_end+5-($top_end-$top_start)/2)."px;".
-    "right: -30px;".
+    "right: calc(50vw - 450px - 30px);".
     "transform: rotate(90deg);".
     "color:#999999;".
     "font-size:1.5em;".

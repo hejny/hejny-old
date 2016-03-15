@@ -38,6 +38,8 @@ foreach($folders as $folder):
 
     $images = glob($folder.'/*');
 
+    shuffle($images);
+
     $gallery=basename($folder);
     $submenu[$gallery]=$MESSAGES['galleries'][$gallery];
     echo('<h3 id="gallery-'.$gallery.'">'.$MESSAGES['galleries'][$gallery].'</h3>');
@@ -53,7 +55,7 @@ foreach($folders as $folder):
         ?>
         <img src="graphic/galleryimg.php?gallery=<?=urlencode($gallery)?>&amp;image=<?=urlencode(basename($image))?>"
 
-            class="galleryimg"
+            class="gallery-img"
             width="150" height="150"
         />
 
@@ -74,7 +76,7 @@ endforeach;
 
     $(function(){
 
-        $('.galleryimg').click(function(){
+        $('.gallery-img').click(function(){
 
 
             var src=$(this).attr('src');
