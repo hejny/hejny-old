@@ -128,13 +128,15 @@ function hashChanged(hash){
 
 //============================================================================================
 
+var lastTop=0;
 
 windowResize = function() {
 
     var top = $('.projects-placeholder').offset().top - (-50);
-    $('.projects-top').css('top', '+=' + top);
+    $('.projects-top').css('top', '+=' + (top-lastTop));
     $('.projects-top').show();
 
+    lastTop=top;
 
 //============================================================================================
 
@@ -219,11 +221,11 @@ windowResize = function() {
 
 $(function(){
 
-    //windowResize();
+    windowResize();
 
-    setTimeout(function(){
+    setInterval(function(){
         windowResize();
-    },100);
+    },600);
 
 });
 
