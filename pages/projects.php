@@ -154,6 +154,7 @@ foreach($projects as $project):
         ($file?"background: url('$file');":'').
         "background-size: cover;".
         "background-repeat: no-repeat;".
+        "background-color: #ffffff;".
         "position: absolute;".
         "top: ".round($top_start)."px;".
         "left: calc(50% + ".round($left/*-(($t%4)<2?-20:20)*/)."px - 131px);".
@@ -183,6 +184,7 @@ foreach($projects as $project):
         "border-radius:10px;".
         ($file?"background: url('$file');":'').
         "background-size: 100% auto;".
+        "background-color: #ffffff;".
         "border: 3px solid {$project['color']};".
         "top: ".round($top_end)."px;".
         "left: calc(50% + ".round($left+(262/2)-(($t%4)<2?40:-40)-6)."px - 131px);".
