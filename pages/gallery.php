@@ -38,7 +38,7 @@ foreach($folders as $folder):
 
     $images = glob($folder.'/*');
 
-    shuffle($images);
+    //shuffle($images);
 
     $gallery=basename($folder);
     $submenu[$gallery]=$MESSAGES['galleries'][$gallery];

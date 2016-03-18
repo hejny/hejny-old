@@ -129,18 +129,107 @@ function hashChanged(hash){
 //============================================================================================
 
 
+windowResize = function() {
 
-$(function(){
-
-    var top= $('.projects-placeholder').offset().top-(-50);
-    $('.projects-top').css('top','+='+top);
+    var top = $('.projects-placeholder').offset().top - (-50);
+    $('.projects-top').css('top', '+=' + top);
     $('.projects-top').show();
 
-});
 
 //============================================================================================
 
 
+    $('.image-group').each(function () {
+
+
+        $(this).css('text-align-last', 'left');
+
+        var positions = [];
+        var status = 0;
+        var i = 0;
+        //0: first item
+        //1: first row
+        //2: normal row
+
+        $(this).find('.gallery-img').each(function () {
+
+
+
+            var left = Math.floor($(this).position().left);
+
+
+            if (status == 0) {
+
+                positions.push(left);
+                status = 1;
+
+            } else if (status == 1) {
+
+
+                if (positions[positions.length - 2] > left) {
+                    status = 2;
+                } else {
+                    positions.push(left);
+                }
+
+
+            }
+
+
+            if (status == 2) {
+
+                if (positions[i] != left) {
+
+                    $(this).css('-webkit-filter', 'grayscale(100%)');
+
+                    //console.log(positions[i], left);
+
+                    /*var top = Math.floor($(this).position().top);
+
+                     $(this).css('position','absolute');
+                     $(this).css('top',top+"px");*/
+
+                    $(this).css('margin-left', (positions[i] - left) + "px");
+
+                    status = 3;
+
+
+                }
+
+
+                i++;
+                if (i >= positions.length)i = 0;
+
+            }
+
+
+        });
+
+
+        if (status == 1) {
+            $(this).css('text-align-last', 'center');
+        }
+
+    });
+
+};
+
+//============================================================================================
+
+
+$(function(){
+
+    windowResize();
+
+});
+
+
+
+$( window ).resize(function() {
+
+    windowResize();
+
+});
 /*
 $(function(){
 
