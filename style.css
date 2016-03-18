@@ -6,7 +6,7 @@ body {
     margin: 0px;
     padding: 0px;
 
-    /background: url("data/backgrounds/page.png");/**/
+    background: url("data/backgrounds/page.png");/**/
     /*background: url("data/backgrounds/BrickOldMixedSize0040_1_S.jpg");/**/
 
 
@@ -92,12 +92,19 @@ button:hover {
     margin-top: -13px;
 }*/
 
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    #menu-title{
+        margin-top: 0px!important;
+    }
+}
+
 
 #menu-title{
 
     position: absolute;
     left:4px;
 
+    margin-top: -14px;
 
     display: flex;
     justify-content: center;
@@ -621,6 +628,7 @@ button:hover {
 
     vertical-align: middle;
 
+
     box-shadow: #ffffff 0px 0px 5px;
 }/**/
 
@@ -710,6 +718,8 @@ button:hover {
     display:block;
     width:5px;
 }
+
+
 
 
 

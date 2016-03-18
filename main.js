@@ -180,7 +180,7 @@ windowResize = function() {
 
                 if (positions[i] != left) {
 
-                    $(this).css('-webkit-filter', 'grayscale(100%)');
+                    /*$(this).css('-webkit-filter', 'grayscale(100%)');*/
 
                     //console.log(positions[i], left);
 
@@ -219,7 +219,11 @@ windowResize = function() {
 
 $(function(){
 
-    windowResize();
+    //windowResize();
+
+    setTimeout(function(){
+        windowResize();
+    },100);
 
 });
 
