@@ -21,7 +21,7 @@ towns4:
         cs: Towns 4
     color: '#151537'
     description:
-        cs: 'Dlouho běžící online hra s izometrickou mapou. 3D budovami, spojováním budov a '
+        cs: 'Dlouho běžící online hra s izometrickou mapou. 3D budovami, spojováním budov a příběhy ve hře.'
     roles:
         ph: creator
 
@@ -35,7 +35,7 @@ towns3:
         cs: Towns 3
     color: '#151537'
     description:
-        cs: 'Nedokončený projekt ve Flashy . 3D budovy.'
+        cs: 'Nedokončený projekt ve Flashy.'
     roles:
         ph: creator
 
@@ -92,7 +92,7 @@ towers:
 logic:
     name:
         cs: Logic
-    color: '#ffffff'
+    color: '#777777'
     description:
         cs: 'Logická bludišťová plošinovka pro známé programovatelné kalkulačky TI-89. Součástí hry je i editor a mnoho vytvořených úrovní.'
     roles:
@@ -168,7 +168,7 @@ avif-mobile:
         cs: Avif Mobile
     color: '#ABC0E1'
     description:
-        cs: 'Mobilní aplikace pro AviFaunistickou databázi ČR. Projekt České společnosti Ornitologické'
+        cs: 'Mobilní aplikace pro AviFaunistickou databázi ČR. Projekt České společnosti ornitologické'
     roles:
         ph: backend
         longhorn: frontend
@@ -186,7 +186,7 @@ avif:
         cs: Avif
     color: '#ABC0E1'
     description:
-        cs: 'AviFaunistická databáze ČR, Projekt České společnosti Ornitologické'
+        cs: 'AviFaunistická databáze ČR, Projekt České společnosti ornitologické'
     roles:
         ph: administrator
 
@@ -201,14 +201,14 @@ cso-hry:
         cs: Ptáci ve městech
     color: '#ECEAEB'
     description:
-        cs: '3 jednoduché minihry pro Českou společnost Ornitologickou'
+        cs: '3 jednoduché minihry pro Českou společnost ornitologickou'
     roles:
         ph: creator
 
     start: '12.2015'
     end: '1.2016'
 
-    url: birds.cz
+    url: zastavky.birdlife.cz
 
 
 
@@ -217,11 +217,11 @@ bezpecne-zastavky:
         cs: Bezpečné zastávky
     color: '#ECEAEB'
     description:
-        cs: 'Projekt České společnosti Ornitologické'
+        cs: 'Projekt České společnosti ornitologické'
     roles:
         ph: creator
 
     start: '1.2016'
     end: '3.2016'
 
-    url: birds.cz
+    url: hry.birds.cz

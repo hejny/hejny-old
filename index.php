@@ -27,7 +27,7 @@ require('lib/neon/neon.php');
 
 //----------------------------------------load $LANGUAGE
 
-$languages=array('en','cs');
+$languages=array(/*'en',*/'cs');
 
 
 $language_uri = substr($_SERVER['REQUEST_URI'],-2);
@@ -229,11 +229,11 @@ $pages=array(
             </li>*/ ?>
         </ul>
 
-        <div id="languages" >
+        <!--<div id="languages" >
             <a href="./en"><img src="locale/en.png"></a>
             <a href="./cs"><img src="locale/cs.png"></a>
 
-        </div>
+        </div>-->
     </nav>
 
 
