@@ -16,6 +16,14 @@ function date2lang($date){
 }
 
 
+$statuses = array(
+    'done' => 'fa-check-circle-o',
+    'working' => 'fa-circle-o',
+    //'working' => 'fa-spinner',
+    'stopped' => 'fa-stop-circle-o',
+    'paused' => 'fa-pause-circle-o'
+);
+
 //------------------------------------------------------------------------------------
 
 $projects_asoc = Nette\Neon\Neon::decode(file_get_contents('data/projects.neon'));
@@ -179,15 +187,32 @@ foreach($projects as $project):
         "z-index:".($zi-90).";".
         "position: absolute;".
         "display:none;".
-        "width:10px;".
-        "height:10px;".
-        "border-radius:10px;".
-        ($file?"background: url('$file');":'').
+        "width:22px;".
+        "height:22px;".
+        "border-radius:30px;".
+        //($file?"background: url('$file');":'').
         "background-size: 100% auto;".
         "background-color: #ffffff;".
-        "border: 3px solid {$project['color']};".
-        "top: ".round($top_end)."px;".
-        "left: calc(50% + ".round($left+(262/2)-(($t%4)<2?40:-40)-6)."px - 131px);".
+        //"border: 3px solid #ff0000;".
+        "top: ".round($top_end+3)."px;".
+        "left: calc(50% + ".round($left+(262/2)-(($t%4)<2?40:-40)-6-3)."px - 131px);".
+        "";
+
+    $style_ted=
+        "z-index:".($zi-80).";".
+        "position: absolute;".
+        "display:none;".
+        "width:30px;".
+        "height:30px;".
+
+        //"padding:-10px;".
+        //"border-radius:10px;".
+        //"color: #00ff00;".
+        "color: {$project['color']};".
+        //"background-color: #ff0000;".
+        "font-size: 30px;".
+        "top: ".round($top_end-2)."px;".
+        "left: calc(50% + ".round($left+(262/2)-(($t%4)<2?40:-40)-6-7)."px - 131px);".
         "";
 
 
@@ -212,13 +237,13 @@ foreach($projects as $project):
                 <p class="project-buttons">
                     <?php if($is_web): ?>
                     <a href="<?=$project['url']?>" target="<?=$target?>" >
-                        <button>Web</button>
+                        <button>Web <i class="fa fa-external-link"></i></button>
                     </a>
                     <?php endif; ?>
 
                     <?php if($is_gallery): ?>
                     <a href="#gallery-<?=$project['key']?>">
-                        <button>Galerie</button>
+                        <button>Galerie <i class="fa fa-arrow-down"></i></button>
                     </a>
                     <?php endif; ?>
 
@@ -266,6 +291,9 @@ foreach($projects as $project):
     <a href="#projects-<?=$project['key']?>" >
         <div class="timeline projects-top" style="<?=$style_t?>" ></div>
         <div class="timeline_end projects-top" style="<?=$style_te?>" ></div>
+        <div class="timeline_end projects-top" style="<?=$style_ted?>" >
+            <i class="fa <?=$statuses[$project['status']]?>"></i>
+        </div>
     </a>
 
 

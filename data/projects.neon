@@ -10,9 +10,11 @@ towns5:
         cs: 'Poslední, právě vyvíjená verze Towns s otevřeným API. Hráči si zde budou moct vytvořit cokoliv od vlastních prvků na budovách až po celá impéria.'
     roles:
         ph: creator
+        sk: creator
 
 
     start: '6.2015'
+    status: working
 
     url: towns.cz
 
@@ -24,9 +26,13 @@ towns4:
         cs: 'Dlouho běžící online hra s izometrickou mapou. 3D budovami, spojováním budov a příběhy ve hře.'
     roles:
         ph: creator
+        dh: collaborator
+        longhorn: collaborator
 
     start: '6.2011'
     end: '6.2015'
+
+    status: done
 
 
 
@@ -38,10 +44,13 @@ towns3:
         cs: 'Nedokončený projekt ve Flashy.'
     roles:
         ph: creator
+        dh: collaborator
 
 
     start: '4.2009'
     end: '3.2010'
+
+    status: stopped
 
 
 towns2:
@@ -52,9 +61,12 @@ towns2:
         cs: 'Druhá verze s izometrickou mapou, vylepšeným designem, vygenerovaným ostrovem 200x200 políček.'
     roles:
         ph: creator
+        dh: collaborator
 
     start: '2.2008'
     end: '4.2009'
+
+    status: done
 
 
 towns1:
@@ -71,7 +83,7 @@ towns1:
     start: '6.2007'
     end: '2.2008'
 
-
+    status: done
 
 
 
@@ -88,6 +100,8 @@ towers:
     start: '2.2011'
     end: '2.2014'
 
+    status: paused
+
 
 logic:
     name:
@@ -101,6 +115,8 @@ logic:
 
     start: '2.2007'
     end: '6.2007'
+
+    status: done
 
 
 
@@ -119,6 +135,8 @@ kunraticky-les:
 
     url: les.towns.cz
 
+    status: done
+
 
 fractals:
     name:
@@ -132,6 +150,8 @@ fractals:
     start: '6.2013'
 
     url: fractal.towns.cz
+
+    status: working
 
 graph:
     name:
@@ -147,6 +167,8 @@ graph:
 
     url: 3d.towns.cz
 
+    status: done
+
 
 drawing:
     name:
@@ -159,6 +181,8 @@ drawing:
 
     start: '5.2012'
     end: '6.2012'
+
+    status: done
 
     url: kresleni.towns.cz
 
@@ -177,6 +201,8 @@ avif-mobile:
     start: '5.2015'
     end: '12.2015'
 
+    status: done
+
     url: 'https://play.google.com/store/apps/details?id=czavif.httpbirds.avifmobile'
 
 
@@ -191,6 +217,8 @@ avif:
         ph: administrator
 
     start: '9.2014'
+
+    status: working
 
     url: birds.cz
 
@@ -208,6 +236,8 @@ cso-hry:
     start: '12.2015'
     end: '1.2016'
 
+    status: done
+
     url: zastavky.birdlife.cz
 
 
@@ -223,5 +253,7 @@ bezpecne-zastavky:
 
     start: '1.2016'
     end: '3.2016'
+
+    status: done
 
     url: hry.birds.cz
