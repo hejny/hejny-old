@@ -125,12 +125,13 @@ button:hover {
     /*display: none;*/
 
     height: 25px;
-    border-radius: 100px;
+    border-radius: 3px;
 
     margin-right: 20px;
     margin-left: 3px;
 
-    /*border: 2px solid #444444;*/
+    border: 1px solid #ccc;
+    /*box-shadow: 0px 0px 3px #ccc;*/
 
 
 
@@ -244,20 +245,59 @@ button:hover {
 
 
 @media (max-width: 1111px) {
-    #menu ul {
+    /*#menu ul*/#menu-title {
         display: none;
     }
+
+    /*#menu ul li a {
+        width: auto;
+    }*/
 
 }
 
 
-@media (max-width: 300px) {
+@media (max-width: 800px) {
     #menu {
         display: none;
     }
 
 
 }
+
+
+
+
+.scrollup {
+
+    z-index: 999999;
+
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+
+
+    width: 50px;
+    height: 50px;
+
+    background-color: #000000;
+    /*background: url("data/backgrounds/menu.png");*/
+    background: url("http://1.gravatar.com/avatar/3d98c15957c5f5dd227e53dbc7cbb60d?s=50&r=pg&d=mm");
+    background-size: cover;
+    padding: 5px;
+
+    color: #ffffff;
+    font-size: 2em;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    border-radius: 100px;
+}
+
+
+
 
 
 
@@ -322,6 +362,23 @@ button:hover {
     /*max-width: calc(100% - 100px);
     max-height: calc(100% - 100px);*/
 
+    height: calc(100% - 100px);
+
+}
+
+
+
+.popup-window .close{
+
+    /*max-width: calc(100% - 100px);
+    max-height: calc(100% - 100px);*/
+
+
+    color: #ffffff;
+    text-shadow: 0px 0px 5px #000;
+
+    font-size: 30px;
+    margin-left: -30px;
     height: calc(100% - 100px);
 
 }
@@ -756,12 +813,27 @@ button:hover {
 
 }
 
-
-
-.gallery-img{
-
-    /*margin: 0px!important;*/
+/*#gallery .image-group:nth-child(odd) {
+    background: rgba(146, 146, 146, 0.10);
 }
+
+#gallery .image-group:nth-child(even) {
+    background: rgba(10, 10, 10, 0.10);
+}*/
+
+.image-group{
+
+    border-bottom: 2px dashed #cccccc;
+    padding-bottom: 30px;
+}
+
+.image-group:last-of-type{
+
+    border-bottom: none;
+}
+
+
+
 
 
 #contact{
