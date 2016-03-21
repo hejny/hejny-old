@@ -93,7 +93,7 @@ button:hover {
 }*/
 
 @media screen and (-webkit-min-device-pixel-ratio:0) {
-    #menu-title{
+    #menu-title, #languages{
         margin-top: 0px!important;
     }
 }
@@ -155,6 +155,7 @@ button:hover {
 
 #languages {
 
+    margin-top: -14px;
 
     position: absolute;
     right:25px;
@@ -172,6 +173,12 @@ button:hover {
 
     display: inline-block;
     margin-left: 5px;
+
+}
+
+#languages .selected img {
+
+    border: 1px solid #ccc;
 
 }
 
@@ -292,6 +299,9 @@ button:hover {
     justify-content: center;
     align-items: center;
     text-align: center;
+
+    /*box-shadow: #cccccc 0 0 10px 0;*/
+    border: 1px solid #ccc;
 
     border-radius: 100px;
 }

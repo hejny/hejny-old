@@ -145,7 +145,7 @@ foreach($projects as $project):
     $top_end=time2top($project['end']);////($timeline_start-$project['end'])/(3600*24*2)+800;
 
 
-    $zi--;
+    $zi-=5;
     $t++;
     $left=150*$i;
 
@@ -199,7 +199,7 @@ foreach($projects as $project):
         "";
 
     $style_ted=
-        "z-index:".($zi-80).";".
+        "z-index:".($zi-89).";".
         "position: absolute;".
         "display:none;".
         "width:30px;".

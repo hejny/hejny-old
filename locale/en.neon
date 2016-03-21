@@ -1,0 +1,97 @@
+
+
+
+pages:
+
+    about: ''
+    articles: Articles + Talks
+    social: Twitter
+    projects: Projects
+    gallery: Gallery
+    contact: Contact
+
+
+menu:
+
+    #about: ''
+    articles: Articles + Talks
+    social: Twitter
+    projects: Projects
+    gallery: Gallery
+    contact: Contact
+
+
+articles:
+    types:
+        article: Article
+        video: Video
+
+
+
+projects:
+    roles:
+        creator: Author
+        frontend: Frontend
+        backend: Backend
+        administrator: Admin
+        collaborator: Co-worker
+
+
+
+    collaborators:
+        ph:
+            name: 'Pavol Hejný'
+            url: 'http://pavolhejny.com/'
+        dh:
+            name: 'David Hrůša'
+            url: 'http://dave-shino.deviantart.com/'
+        longhorn:
+            name: 'Přemysl Černý'
+            url: 'http://blog.towns.cz/author/longhorn/'
+        sk:
+            name: 'Štefan Kecskés'
+            url: 'https://www.skey.uk'
+
+
+
+    times:
+        now: Now
+        months:
+            - January
+            - February
+            - March
+            - April
+            - May
+            - June
+            - July
+            - August
+            - September
+            - October
+            - November
+            - December
+
+
+
+
+
+
+
+
+about:
+    name: Pavol Hejný
+    subname: 'Web app developer'
+    text: 'My name is Pavol Hejný live in Prague (Czech Republic) and i deal with programming. In the present I am working in the <a href="http://www.cso.cz/" target="_blank">Czech Society for Ornithology</a> as a programmer. I am also creating a series of Towns game. I am currently working on the next version <a href="http://towns.cz/" target="_blank">Towns5</a>. I also created a board game Towers. Sometimes i <a href="#articles" >talk about my activities or write an article</a>.'
+
+
+galleries:
+    drawing: Drawing
+    aliasing: Aliasing
+    fractals: Fractals
+    graph: 3D graph
+    paintings: Paintings
+    kunraticky-les: 'Kunratický les'
+    towns1: 'Towns 1'
+    towns2: 'Towns 2'
+    towns3: 'Towns 3'
+    towns4: 'Towns 4'
+    towns5: 'Towns 5'
