@@ -106,6 +106,9 @@ $pages=array(
         <?php /*<link rel="icon" href="favicon.ico">*/ ?>
         <link rel="stylesheet" type="text/css" href="style.css"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.2.3/css/simple-line-icons.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+
         <?php /*<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>*/ ?>
        <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
         <script src="https://code.jquery.com/ui/1.11.3/jquery-ui.min.js"></script>
@@ -245,9 +248,13 @@ $pages=array(
     <div class="overlay" style="display: none;"></div>
     <div class="popup-window" style="display: none;">
         <div class="content"></div>
+        <div class="close"><i class="fa fa-times-circle"></i></div>
+
     </div>
 
 
+
+    <a href="#about" class="scrollup"><i class="fa fa-arrow-up"></a>
 
 
 

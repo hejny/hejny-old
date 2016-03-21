@@ -36,6 +36,8 @@ usort($folders, 'sortGalleries');
 
 foreach($folders as $folder):
 
+    echo('<div class="image-group">');
+
     $images = glob($folder.'/*');
 
     //shuffle($images);
@@ -45,10 +47,26 @@ foreach($folders as $folder):
     echo('<h3 id="gallery-'.$gallery.'">'.$MESSAGES['galleries'][$gallery].'</h3>');
 
     /**/if(isset($projects_asoc[$gallery])){
-        echo('<button onclick="scroll_to(\'#projects-'.$gallery.'\')">Zobrazit projekt</button><br>');
+
+        ?>
+
+        <p><?=$projects_asoc[$gallery]['description'][$LANGUAGE]?></p>
+
+        <p>
+
+            <a href="<?=$projects_asoc[$gallery]['url']?>" target="_blank" >
+                <button>Web <i class="fa fa-external-link"></i></button>
+            </a>
+
+            <button onclick="scroll_to('#projects-<?=$gallery?>')">Zobrazit projekt <i class="fa fa-arrow-up"></i></button>
+
+        </p>
+
+        <?php
+
     }
 
-    echo('<div class="image-group">');
+
     foreach($images as $image):
 
 
