@@ -5,9 +5,13 @@
 towns5:
     name:
         cs: Towns 5
-    color: '#151537'
+        en: Towns 5
+
+    color: '#0098ff'
     description:
         cs: 'Poslední, právě vyvíjená verze Towns s otevřeným API. Hráči si zde budou moct vytvořit cokoliv od vlastních prvků na budovách až po celá impéria.'
+        en: ''
+
     roles:
         ph: creator
         sk: creator
@@ -21,9 +25,13 @@ towns5:
 towns4:
     name:
         cs: Towns 4
-    color: '#151537'
+        en: Towns 4
+
+    color: '#0098ff'
     description:
         cs: 'Dlouho běžící online hra s izometrickou mapou. 3D budovami, spojováním budov a příběhy ve hře.'
+        en: ''
+
     roles:
         ph: creator
         dh: collaborator
@@ -39,7 +47,9 @@ towns4:
 towns3:
     name:
         cs: Towns 3
-    color: '#151537'
+        en: Towns 3
+
+    color: '#0098ff'
     description:
         cs: 'Nedokončený projekt ve Flashy.'
     roles:
@@ -56,9 +66,13 @@ towns3:
 towns2:
     name:
         cs: Towns 2
-    color: '#151537'
+        en: Towns 2
+
+    color: '#0098ff'
     description:
         cs: 'Druhá verze s izometrickou mapou, vylepšeným designem, vygenerovaným ostrovem 200x200 políček.'
+        en: ''
+
     roles:
         ph: creator
         dh: collaborator
@@ -72,9 +86,13 @@ towns2:
 towns1:
     name:
         cs: Towns 1
-    color: '#151537'
+        en: Towns 1
+
+    color: '#0098ff'
     description:
         cs: 'První ze série her Towns. Jednoduchá strategická hra s 2D mapou 100x100 políček. '
+        en: ''
+
     roles:
         ph: creator
         dh: collaborator
@@ -90,9 +108,13 @@ towns1:
 towers:
     name:
         cs: Věže
+        en: Towers
+
     color: '#FFA826'
     description:
         cs: 'Desková stavební hra hraná v reálném čase. Ještě ne zcela dokončený projekt.'
+        en: ''
+
     roles:
         ph: creator
 
@@ -106,9 +128,13 @@ towers:
 logic:
     name:
         cs: Logic
+        en: Logic
+
     color: '#777777'
     description:
         cs: 'Logická bludišťová plošinovka pro známé programovatelné kalkulačky TI-89. Součástí hry je i editor a mnoho vytvořených úrovní.'
+        en: ''
+
     roles:
         ph: creator
 
@@ -124,9 +150,13 @@ logic:
 kunraticky-les:
     name:
         cs: Kunratický les
+        en: Kunratický les
+
     color: '#6CC424'
     description:
         cs: 'Přes 500 propojených 360° snímků z Kunratického lesa z jara 2010.'
+        en: ''
+
     roles:
         ph: creator
 
@@ -141,9 +171,13 @@ kunraticky-les:
 fractals:
     name:
         cs: Fraktály
+        en: Fractals
+
     color: '#000000'
     description:
         cs: 'Generátor fraktálů odvozených z Mandelbrotovi množiny.'
+        en: ''
+
     roles:
         ph: creator
 
@@ -156,9 +190,13 @@ fractals:
 graph:
     name:
         cs: 3D Graf
+        en: 3D Graph
+
     color: '#1A2BEF'
     description:
         cs: '2D / 3D program pro vykreslování grafů jedné nebo dvou funkcí. Netradiční možnost dinamicky měnit barvu a tloušťku čas podle vzorce.'
+        en: ''
+
     roles:
         ph: creator
 
@@ -173,9 +211,13 @@ graph:
 drawing:
     name:
         cs: Kreslení
+        en: Drawing
+
     color: '#1A2BEF'
     description:
         cs: 'Jednoduchý kreslící bitmapový program s několika speciálními funkcemi např. paprsčité kreslení čar a obdélníků nebo kreslení pomocí textu.'
+        en: ''
+
     roles:
         ph: creator
 
@@ -190,9 +232,13 @@ drawing:
 avif-mobile:
     name:
         cs: Avif Mobile
+        en: Avif Mobile
+
     color: '#ABC0E1'
     description:
         cs: 'Mobilní aplikace pro AviFaunistickou databázi ČR. Projekt České společnosti ornitologické'
+        en: ''
+
     roles:
         ph: backend
         longhorn: frontend
@@ -210,9 +256,14 @@ avif-mobile:
 avif:
     name:
         cs: Avif
+        en: Avif
+
     color: '#ABC0E1'
     description:
         cs: 'AviFaunistická databáze ČR, Projekt České společnosti ornitologické'
+        en: ''
+
+
     roles:
         ph: administrator
 
@@ -227,9 +278,14 @@ avif:
 cso-hry:
     name:
         cs: Ptáci ve městech
-    color: '#ECEAEB'
+        en: Birds in cities
+
+
+    color: '#ABC0E1'
     description:
         cs: '3 jednoduché minihry pro Českou společnost ornitologickou'
+        en: ''
+
     roles:
         ph: creator
 
@@ -245,9 +301,13 @@ cso-hry:
 bezpecne-zastavky:
     name:
         cs: Bezpečné zastávky
-    color: '#ECEAEB'
+        en: Safe stops
+
+    color: '#ABC0E1'
     description:
         cs: 'Projekt České společnosti ornitologické'
+        en: ''
+
     roles:
         ph: creator
 

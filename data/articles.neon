@@ -1,6 +1,8 @@
 
 -
-    title: "Fraktály"
+    title:
+        cs: "Fraktály"
+        en: "Fractals"
     type: video
     url: "http://www.itnetwork.cz/zpravodajstvi/prednasky/fraktaly"
 
@@ -8,7 +10,9 @@
 
 
 -
-    title: "Jak funguje online hra Towns"
+    title:
+        cs: "Jak funguje online hra Towns"
+        en: "How does online game Towns work"
     type: video
     url: "http://www.itnetwork.cz/zpravodajstvi/prednasky/jak-funguje-online-hra-towns"
 
@@ -16,14 +20,19 @@
 
 
 -
-    title: "Generátor map"
+    title:
+        cs: "Generátor map"
+        en: "Map generator"
     type: article
     url: "http://www.itnetwork.cz/php/php-aplikace-generator-map"
 
 
 
 -
-    title: "Generátor stromů"
+    title:
+        cs: "Generátor stromů"
+        en: "Tree generator"
+
     type: article
     url: "http://www.itnetwork.cz/php/ostatni/php-aplikace-generator-stromu"
 

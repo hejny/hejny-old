@@ -22,7 +22,7 @@
     <article>
 
         <a href="<?=$article['url']?>" target="_blank">
-            <?=$article['title']?> <i>(<?=$type?>, <?=$site?> <i class="fa fa-external-link"></i>)</i>
+            <?=$article['title'][$LANGUAGE]?> <i>(<?=$type?>, <?=$site?> <i class="fa fa-external-link"></i>)</i>
         </a>
         <!--<p>
             <iframe width="100%" height="500" src="<?/*=$article['url']*/?>" frameborder="0" allowfullscreen></iframe>

@@ -27,7 +27,7 @@ require('lib/neon/neon.php');
 
 //----------------------------------------load $LANGUAGE
 
-$languages=array(/*'en',*/'cs');
+$languages=array('en','cs');
 
 
 $language_uri = substr($_SERVER['REQUEST_URI'],-2);
@@ -48,6 +48,9 @@ if(in_array($language_uri,$languages)){
 
 }
 
+//echo($LANGUAGE);
+
+
 //----------------------------------------redirect
 
 $url=$config['base_url'].$LANGUAGE;
@@ -59,7 +62,7 @@ if('http://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']!=$url){
 
 //----------------------------------------load $MESSAGES
 
-$file="/locale/$LANGUAGE.neon";
+$file=__DIR__ ."/locale/$LANGUAGE.neon";
 if(!file_exists($file)) {
     $LANGUAGE='cs';//todo maybe in future default language should be english
     $file=__DIR__ ."/locale/$LANGUAGE.neon";
@@ -232,11 +235,13 @@ $pages=array(
             </li>*/ ?>
         </ul>
 
-        <!--<div id="languages" >
-            <a href="./en"><img src="locale/en.png"></a>
-            <a href="./cs"><img src="locale/cs.png"></a>
+        <div id="languages" >
 
-        </div>-->
+            <?php foreach($languages as $language): ?>
+                <a href="./<?=$language?>" class="<?=$language==$LANGUAGE?'selected':''?>"><img src="locale/<?=$language?>.png"></a>
+            <?php endforeach; ?>
+
+        </div>
     </nav>
 
 
