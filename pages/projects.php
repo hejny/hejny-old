@@ -145,6 +145,9 @@ foreach($projects as $project):
     $top_end=time2top($project['end']);////($timeline_start-$project['end'])/(3600*24*2)+800;
 
 
+    if($top_end>$top_start-85)$top_end=$top_start-85;
+
+
     $zi-=5;
     $t++;
     $left=150*$i;
@@ -158,7 +161,7 @@ foreach($projects as $project):
 
 
     $style=
-        "z-index:$zi;".
+        "z-index:".($zi+1000).";".
         ($file?"background: url('$file');":'').
         "background-size: cover;".
         "background-repeat: no-repeat;".
@@ -184,7 +187,7 @@ foreach($projects as $project):
         "";
 
     $style_te=
-        "z-index:".($zi-90).";".
+        "z-index:".($zi-90+500).";".
         "position: absolute;".
         "display:none;".
         "width:22px;".
@@ -194,12 +197,12 @@ foreach($projects as $project):
         "background-size: 100% auto;".
         "background-color: #ffffff;".
         //"border: 3px solid #ff0000;".
-        "top: ".round($top_end+3)."px;".
+        "top: ".round($top_end+2)."px;".
         "left: calc(50% + ".round($left+(262/2)-(($t%4)<2?40:-40)-6-3)."px - 131px);".
         "";
 
     $style_ted=
-        "z-index:".($zi-89).";".
+        "z-index:".($zi-89+500).";".
         "position: absolute;".
         "display:none;".
         "width:30px;".
@@ -211,7 +214,7 @@ foreach($projects as $project):
         "color: {$project['color']};".
         //"background-color: #ff0000;".
         "font-size: 30px;".
-        "top: ".round($top_end-2)."px;".
+        "top: ".round($top_end-4)."px;".
         "left: calc(50% + ".round($left+(262/2)-(($t%4)<2?40:-40)-6-7)."px - 131px);".
         "";
 
