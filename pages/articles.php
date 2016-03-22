@@ -19,17 +19,17 @@
 
 
 
-    <article>
+    <div>
 
         <a href="<?=$article['url']?>" target="_blank">
             <?=$article['title'][$LANGUAGE]?> <i>(<?=$type?>, <?=$site?> <i class="fa fa-external-link"></i>)</i>
         </a>
-        <!--<p>
-            <iframe width="100%" height="500" src="<?/*=$article['url']*/?>" frameborder="0" allowfullscreen></iframe>
-        </p>-->
+        <?php /*<p>
+            <iframe width="100%" height="500" src="<?=$article['url']?>" frameborder="0" allowfullscreen></iframe>
+        </p> */ ?>
 
 
-    </article>
+    </div>
 
 
 

@@ -27,6 +27,10 @@ require('lib/neon/neon.php');
 
 //----------------------------------------load $LANGUAGE
 
+$language_names=array(
+  'en'=>'English',
+  'cs'=>'Čeština'
+);
 $languages=array('en','cs');
 
 
@@ -95,6 +99,8 @@ $pages=array(
 
 );
 
+ini_set('zlib.output_compression_level', 4);
+ob_start("ob_gzhandler");
 
 ?>
     <!DOCTYPE html>
@@ -179,8 +185,8 @@ $pages=array(
     <nav id="menu">
 
         <a href="#about" id="menu-title">
-            <img src="http://1.gravatar.com/avatar/3d98c15957c5f5dd227e53dbc7cbb60d?s=30&r=pg&d=mm">
-            <h1>Pavol Hejný</h1>
+            <img src="http://1.gravatar.com/avatar/3d98c15957c5f5dd227e53dbc7cbb60d?s=30&r=pg&d=mm" alt="<?=$MESSAGES['about']['name']?>">
+            <h1><?=$MESSAGES['about']['name']?></h1>
         </a>
 
         <ul>
@@ -197,17 +203,6 @@ $pages=array(
                     ?>
                     <li>
                     <a href="#<?= $page ?>"><?= $MESSAGES['menu'][$page] ?></a>
-
-
-                    <!--<ul>
-                        <?php /*foreach($submenu as $subpage=>$subname): */
-                    ?>
-                            <li><a href="#<?/*=$page.'-'.$subpage*/
-                    ?>"><?/*=$subname*/
-                    ?></a></li>
-                        <?php /*endforeach; */
-                    ?>
-                    </ul>-->
 
 
 
@@ -238,7 +233,7 @@ $pages=array(
         <div id="languages" >
 
             <?php foreach($languages as $language): ?>
-                <a href="./<?=$language?>" class="<?=$language==$LANGUAGE?'selected':''?>"><img src="locale/<?=$language?>.png"></a>
+                <a href="./<?=$language?>" class="<?=$language==$LANGUAGE?'selected':''?>"><img src="locale/<?=$language?>.png" alt="<?=$language?> flag" title="<?=$language_names[$language]?>"></a>
             <?php endforeach; ?>
 
         </div>
@@ -259,7 +254,7 @@ $pages=array(
 
 
 
-    <a href="#about" class="scrollup"><i class="fa fa-arrow-up"></a>
+    <a href="#about" class="scrollup"><i class="fa fa-arrow-up"></i></a>
 
 
 
@@ -268,3 +263,10 @@ $pages=array(
 
     </body>
     </html>
+
+
+<?php
+
+    ob_end_flush();
+
+?>

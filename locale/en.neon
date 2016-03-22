@@ -26,16 +26,22 @@ articles:
         article: Article
         video: Video
 
+buttons:
+    web: Web
+    gallery: Gallery
+    project: Show project
+
+
 
 
 projects:
+
     roles:
         creator: Author
         frontend: Frontend
         backend: Backend
         administrator: Admin
         collaborator: Co-worker
-
 
 
     collaborators:
