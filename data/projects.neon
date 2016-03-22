@@ -15,6 +15,7 @@ towns5:
     roles:
         ph: creator
         sk: creator
+        mp: collaborator
 
 
     start: '6.2015'
