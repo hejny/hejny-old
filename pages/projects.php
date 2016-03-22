@@ -236,14 +236,14 @@ foreach($projects as $project):
                 <?php if($is_web || $is_gallery): ?>
                 <p class="project-buttons">
                     <?php if($is_web): ?>
-                    <a href="<?=$project['url']?>" target="<?=$target?>" >
-                        <button>Web <i class="fa fa-external-link"></i></button>
+                    <a href="<?=$project['url']?>" target="<?=$target?>" class="button" >
+                        <?=$MESSAGES['buttons']['web']?> <i class="fa fa-external-link"></i>
                     </a>
                     <?php endif; ?>
 
                     <?php if($is_gallery): ?>
-                    <a href="#gallery-<?=$project['key']?>">
-                        <button>Galerie <i class="fa fa-arrow-down"></i></button>
+                    <a href="#gallery-<?=$project['key']?>" class="button">
+                        <?=$MESSAGES['buttons']['gallery']?> <i class="fa fa-arrow-down"></i>
                     </a>
                     <?php endif; ?>
 

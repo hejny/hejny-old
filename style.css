@@ -7,6 +7,7 @@ body {
     padding: 0px;
 
     background: url("data/backgrounds/page.png");/**/
+    background-color: #fff;/**/
     /*background: url("data/backgrounds/BrickOldMixedSize0040_1_S.jpg");/**/
 
 
@@ -16,6 +17,7 @@ body {
 a {
     text-decoration: none;
     color: #000000;
+    outline: 0;
 
 }
 
@@ -34,9 +36,24 @@ button {
     cursor: pointer; }
 button:hover {
     background-color: black; }
-.selected {
-    background-color: black; }
 
+
+
+.button {
+    display: inline-block;
+    border: none;
+    padding: 0 10px;
+    margin: 2px;
+    min-width: 100px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    border-radius: 3px;
+    background-color: #0098ff;
+    color: white;
+    cursor: pointer; }
+.button:hover {
+    background-color: black; }
 
 
 
@@ -574,12 +591,12 @@ button:hover {
     /*border: 2px solid #777777;*/
 }
 
-#articles article a{
+#articles a{
     display: block;
     /*width: calc(100vw - 110px);
     max-width: 100%;*/
     width: calc(100% - 20px);/*todo 2* padding*/
-    height: 30px;
+    min-height: 30px;
 
     padding: 10px;
     margin: 0px;
@@ -590,19 +607,19 @@ button:hover {
 
 }
 
-#articles article:nth-child(odd) a {
+#articles div:nth-child(odd) a {
     background: rgba(146, 146, 146, 0.10);
 }
 
-#articles article:nth-child(even) a {
+#articles div:nth-child(even) a {
     background: rgba(10, 10, 10, 0.10);
 }
 
-#articles article a:hover {
+#articles div a:hover {
     background: rgba(10, 50, 150, 0.10);
 }
 
-#articles article a i{
+#articles div a i{
 
     text-decoration: none;
     color: #999999;
@@ -610,7 +627,7 @@ button:hover {
 
 }
 
-#articles article p{
+#articles div p{
 
     display: block;
     width: calc(100% - 20px);/*todo 2* padding*/
@@ -626,7 +643,7 @@ button:hover {
 
 }
 
-#articles article p *{
+#articles div p *{
 
 
 }

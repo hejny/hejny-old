@@ -28,6 +28,12 @@ articles:
 
 
 
+buttons:
+    web: Web
+    gallery: Galerie
+    project: Zobrazit projekt
+
+
 projects:
     roles:
         creator: Autor
@@ -35,7 +41,6 @@ projects:
         backend: Backend
         administrator: Správce
         collaborator: Spolupracovník
-
 
 
     collaborators:

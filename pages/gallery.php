@@ -36,15 +36,17 @@ usort($folders, 'sortGalleries');
 
 foreach($folders as $folder):
 
-    echo('<div class="image-group">');
+    $gallery=basename($folder);
+
+    echo('<div class="image-group" id="gallery-'.$gallery.'">');
 
     $images = glob($folder.'/*');
 
     //shuffle($images);
 
-    $gallery=basename($folder);
+
     $submenu[$gallery]=$MESSAGES['galleries'][$gallery];
-    echo('<h3 id="gallery-'.$gallery.'">'.$MESSAGES['galleries'][$gallery].'</h3>');
+    echo('<h3>'.$MESSAGES['galleries'][$gallery].'</h3>');
 
     /**/if(isset($projects_asoc[$gallery])){
 
@@ -54,11 +56,11 @@ foreach($folders as $folder):
 
         <p>
 
-            <a href="<?=$projects_asoc[$gallery]['url']?>" target="_blank" >
-                <button>Web <i class="fa fa-external-link"></i></button>
+            <a href="<?=$projects_asoc[$gallery]['url']?>" target="_blank"  class="button">
+                <?=$MESSAGES['buttons']['web']?> <i class="fa fa-external-link"></i>
             </a>
 
-            <button onclick="scroll_to('#projects-<?=$gallery?>')">Zobrazit projekt <i class="fa fa-arrow-up"></i></button>
+            <button onclick="scroll_to('#projects-<?=$gallery?>')"><?=$MESSAGES['buttons']['project']?> <i class="fa fa-arrow-up"></i></button>
 
         </p>
 
@@ -74,10 +76,9 @@ foreach($folders as $folder):
         <img src="graphic/galleryimg.php?gallery=<?=urlencode($gallery)?>&amp;image=<?=urlencode(basename($image))?>"
 
             class="gallery-img"
-            width="150" height="150"
+            width="120" height="120"
+             alt="<?=urlencode(basename($image))?> - <?=$gallery?>"
         />
-
-        <!--onclick=""-->
 
         <?php
 
@@ -90,28 +91,3 @@ foreach($folders as $folder):
 endforeach;
 
 ?>
-<script>
-
-    $(function(){
-
-        $('.gallery-img').click(function(){
-
-
-            var src=$(this).attr('src');
-
-
-            window_open('<img src="'+src+'&amp;big" />');
-            /*$(this).animate({
-                "width": "500px",
-                "height": "500px"
-
-            }, "slow" );*/
-
-
-        });
-
-
-    });
-
-</script>
-
