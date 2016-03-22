@@ -114,19 +114,30 @@ function hashChanged(hash){
 
     //alert(hash);
 
-    $('.project-selected').removeClass('project-selected', 200);
+    var hash_= hash.split('gallery').join('projects');
+
+    console.log(hash_);
+
+    //if(hash==hash_)
+    //$('.project-selected').removeClass('project-selected', 200);
 
     var id1=$('.project-selected').attr('id');
-    var id2=$(hash).attr('id');
+    var id2=$(hash_).attr('id');
 
     if(id1!=id2){
-        if($(hash).hasClass('project')){
 
-            $(hash).addClass('project-selected',200);
+        $('.project-selected').removeClass('project-selected', 200);
+
+        if($(hash_).hasClass('project')){
+
+            $(hash_).addClass('project-selected',200);
 
         }
-    }else{
-        history.pushState(null, null, '#');
+    }else
+    if(hash==hash_){
+
+        //$('.project-selected').removeClass('project-selected', 200);
+        //history.pushState(null, null, '#');
     }
 
 }
@@ -250,7 +261,14 @@ $(function(){
 
         //console.log($(this).scrollTop());
         if ($(this).scrollTop() > 300) {
-            $('.scrollup').fadeIn();
+            $('.scrollup').fadeIn()/*.draggable({
+                stop: function(e){
+                    e.preventDefault();
+                }
+            })*/;
+
+
+
         } else {
             $('.scrollup').fadeOut();
         }
@@ -265,7 +283,21 @@ $(function(){
 
 
 
+    $('.gallery-img').click(function(){
 
+
+        var src=$(this).attr('src');
+
+
+        window_open('<img src="'+src+'&amp;big" />');
+        /*$(this).animate({
+         "width": "500px",
+         "height": "500px"
+
+         }, "slow" );*/
+
+
+    });
 
 
 
