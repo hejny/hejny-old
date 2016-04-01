@@ -30,6 +30,7 @@ buttons:
     web: Web
     gallery: Gallery
     project: Show project
+    gallery_more: Whole gallery
 
 
 
@@ -89,7 +90,7 @@ projects:
 about:
     name: Pavol Hejný
     subname: 'Web app developer'
-    text: 'My name is Pavol Hejný live in Prague (Czech Republic) and i deal with programming. In the present I am working in the <a href="http://www.cso.cz/" target="_blank">Czech Society for Ornithology</a> as a programmer. I am also creating a series of Towns game. I am currently working on the next version <a href="http://towns.cz/" target="_blank">Towns5</a>. I also created a board game Towers. Sometimes i <a href="#articles" >talk about my activities or write an article</a>.'
+    text: 'My name is Pavol Hejný live in Prague (Czech Republic). In the present I am working in the <a href="http://www.cso.cz/" target="_blank">Czech Society for Ornithology</a> as a programmer. I am also creating a series of Towns games. I am currently working on the next version <a href="http://towns.cz/" target="_blank">Towns5</a>. I also created a board game Towers. Sometimes i <a href="#articles" >talk about my activities or write an article</a>.'
 
 
 galleries:

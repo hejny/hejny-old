@@ -27,7 +27,7 @@ if(isset($_GET['big'])){
 
 }else{
 
-    $size=round(150);
+    $size=round(128);
     $crop=true;
 
 }
