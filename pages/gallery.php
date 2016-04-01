@@ -38,7 +38,7 @@ foreach($folders as $folder):
 
     $gallery=basename($folder);
 
-    echo('<div class="image-group" id="gallery-'.$gallery.'">');
+
 
     $images = glob($folder.'/*');
 
@@ -46,45 +46,62 @@ foreach($folders as $folder):
 
 
     $submenu[$gallery]=$MESSAGES['galleries'][$gallery];
-    echo('<h3>'.$MESSAGES['galleries'][$gallery].'</h3>');
+    echo('<h3 id="gallery-'.$gallery.'">'.$MESSAGES['galleries'][$gallery].'</h3>');
 
-    /**/if(isset($projects_asoc[$gallery])){
+    if(isset($projects_asoc[$gallery])){
 
-        ?>
+    ?>
 
         <p><?=$projects_asoc[$gallery]['description'][$LANGUAGE]?></p>
 
-        <p>
+    <?php } ?>
 
-            <a href="<?=$projects_asoc[$gallery]['url']?>" target="_blank"  class="button">
-                <?=$MESSAGES['buttons']['web']?> <i class="fa fa-external-link"></i>
-            </a>
+    <p>
 
-            <button onclick="scroll_to('#projects-<?=$gallery?>')"><?=$MESSAGES['buttons']['project']?> <i class="fa fa-arrow-up"></i></button>
+        <a href="<?=$projects_asoc[$gallery]['url']?>" target="_blank"  class="button">
+            <?=$MESSAGES['buttons']['web']?> <i class="fa fa-external-link"></i>
+        </a>
 
-        </p>
+        <button onclick="scroll_to('#projects-<?=$gallery?>')"><?=$MESSAGES['buttons']['project']?> <i class="fa fa-arrow-up"></i>
+        </button>
 
-        <?php
+        <button
+            onclick="$('#gallery-<?=$gallery?>-image-group').find('.more').toggle()"
+        ><?=$MESSAGES['buttons']['gallery_more']?> <i class="fa fa-caret-square-o-down"></i>
+        </button>
 
-    }
+    </p>
+
+    <?php
 
 
+
+    echo('<div class="image-group" id="gallery-'.$gallery.'-image-group"><p>');
+
+
+
+    $i=0;
     foreach($images as $image):
 
+
+        if($i==6){echo('</p><p class="more" style="display: none;">');}
 
         ?>
         <img src="graphic/galleryimg.php?gallery=<?=urlencode($gallery)?>&amp;image=<?=urlencode(basename($image))?>"
 
             class="gallery-img"
-            width="120" height="120"
+            width="128" height="128"
              alt="<?=urlencode(basename($image))?> - <?=$gallery?>"
         />
 
         <?php
 
 
+        $i++;
+
+
     endforeach;
-    echo('</div>');
+    echo('</p></div>');
     /**/
 
 
