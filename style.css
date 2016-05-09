@@ -293,7 +293,7 @@ button:hover {
 
 .scrollup {
 
-    z-index: 999999;
+    z-index: 5500;
 
     position: fixed;
     bottom: 30px;
