@@ -311,6 +311,7 @@ bezpecne-zastavky:
 
     roles:
         ph: creator
+        zj: administrator
 
     start: '1.2016'
     end: '3.2016'

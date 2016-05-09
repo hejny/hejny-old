@@ -137,7 +137,7 @@ foreach($projects as $project):
 
 
     $file='graphic/projectimg.php?project='.$project['key'];
-
+    $file=false;
 
     /*$style=
         "z-index:2;".
