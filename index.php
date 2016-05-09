@@ -190,7 +190,7 @@ ob_start("ob_gzhandler");
 
 
         <footer>
-            @ <?=date('Y')?> Pavol Hejný
+            &copy; <?=date('Y')?> Pavol Hejný
         </footer>
 
     </main>

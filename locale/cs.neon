@@ -60,7 +60,9 @@ projects:
         mp:
             name: 'Matúš Petrofčík'
             url: 'http://www.petrofcik.eu/'
-
+        zj:
+            name: 'Zbyněk Janoška'
+            url: ''
 
     times:
         now: Současnost

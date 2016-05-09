@@ -64,13 +64,18 @@ foreach($folders as $folder):
         </a>
         <?php endif; ?>
 
+        <?php if(isset($projects_asoc[$gallery])): ?>
         <button onclick="scroll_to('#projects-<?=$gallery?>')"><?=$MESSAGES['buttons']['project']?> <i class="fa fa-arrow-up"></i>
         </button>
+        <?php endif; ?>
 
-        <button
-            onclick="$('#gallery-<?=$gallery?>-image-group').find('.more').toggle()"
-        ><?=$MESSAGES['buttons']['gallery_more']?> <i class="fa fa-caret-square-o-down"></i>
-        </button>
+
+        <?php if(count($images)>6): ?>
+            <button
+                onclick="$('#gallery-<?=$gallery?>-image-group').find('.more').toggle();if($(this).find('i').hasClass('fa-caret-square-o-down')){$(this).find('i').removeClass('fa-caret-square-o-down').addClass('fa-caret-square-o-up');}else{$(this).find('i').removeClass('fa-caret-square-o-up').addClass('fa-caret-square-o-down');}"
+            ><?=$MESSAGES['buttons']['gallery_more']?> <i class="fa fa-caret-square-o-down"></i>
+            </button>
+        <?php endif; ?>
 
     </p>
 
