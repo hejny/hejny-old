@@ -29,7 +29,7 @@ $statuses = array(
 $projects_asoc = Nette\Neon\Neon::decode(file_get_contents('data/projects.neon'));
 
 $projects=array();
-foreach($projects_asoc as $name=>$project){
+foreach($projects_asoc as $name=>&$project){
 
     $project['key']=$name;
 
@@ -38,6 +38,36 @@ foreach($projects_asoc as $name=>$project){
 
     $project['start']=date2time($project['start']);
     $project['end']=date2time($project['end']);
+
+
+    if(isset($project['url'])){
+        $target='_blank';
+
+        if(substr($project['url'],0,4)!=='http'){
+            $project['url']='http://'.$project['url'];
+        }
+
+
+        $project['url_']=str_replace(
+            array('http://','https://'),
+            '',
+            $project['url']
+        );
+
+        $project['url_']=explode('/',$project['url_'],2);
+        $project['url_']=$project['url_'][0];
+        //$project['url_']=ucfirst($project['url_']);
+
+
+
+    }else{
+
+        unset($project['url']);
+
+    }
+
+
+
     $projects[]=$project;
 }
 
@@ -85,31 +115,6 @@ $zi=500;
 foreach($projects as $project):
 
     $projects_keys[]=$project['key'];
-
-    if(isset($project['url'])){
-        $target='_blank';
-
-        if(substr($project['url'],0,4)!=='http'){
-            $project['url']='http://'.$project['url'];
-        }
-
-
-        $project['url_']=str_replace(
-            array('http://','https://'),
-            '',
-            $project['url']
-        );
-
-
-
-    }/*else{
-
-        $project['url']='#'.$project['key'];
-        $target='_self';
-
-    }*/
-
-
 
 
     if($project['roles']['ph']=='creator')
@@ -228,7 +233,7 @@ foreach($projects as $project):
     ?>
 
 
-    <div id="projects-<?=$project['key']?>" onclick="hash_to('#projects-<?=$project['key']?>')" class="project projects-top" style="<?=$style?>" >
+    <div id="projects-<?=$project['key']?>" onclick="$(this).removeClass('project-selected', 200);hash_to('#projects-<?=$project['key']?>')" class="project projects-top" style="<?=$style?>" >
         <div>
             <h3><?=$project['name'][$LANGUAGE]?></h3><br>
             <?php if($role): ?><i><?=$role?></i><?php endif; ?>
@@ -240,7 +245,7 @@ foreach($projects as $project):
                 <p class="project-buttons">
                     <?php if($is_web): ?>
                     <a href="<?=$project['url']?>" target="<?=$target?>" class="button" >
-                        <?=$MESSAGES['buttons']['web']?> <i class="fa fa-external-link"></i>
+                        <?=$project['url_']?> <i class="fa fa-external-link"></i>
                     </a>
                     <?php endif; ?>
 

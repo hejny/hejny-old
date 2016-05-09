@@ -126,6 +126,9 @@ ob_start("ob_gzhandler");
             var timestamp=<?=time()?>;
         </script>
 
+
+
+
         <script>
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
                 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -136,6 +139,17 @@ ob_start("ob_gzhandler");
             ga('send', 'pageview');
 
         </script>
+
+
+
+
+        <script>
+            (function(h,e,a,t,m,p) {
+                m=e.createElement(a);m.async=!0;m.src=t;
+                p=e.getElementsByTagName(a)[0];p.parentNode.insertBefore(m,p);
+            })(window,document,'script','https://u.heatmap.it/log.js');
+        </script>
+
 
 
 
