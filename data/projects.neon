@@ -295,7 +295,7 @@ cso-hry:
 
     status: done
 
-    url: zastavky.birdlife.cz
+    url: hry.birds.cz
 
 
 
@@ -317,4 +317,4 @@ bezpecne-zastavky:
 
     status: done
 
-    url: hry.birds.cz
+    url: zastavky.birdlife.cz

@@ -58,9 +58,11 @@ foreach($folders as $folder):
 
     <p>
 
+        <?php if(isset($projects_asoc[$gallery]['url'])): ?>
         <a href="<?=$projects_asoc[$gallery]['url']?>" target="_blank"  class="button">
-            <?=$MESSAGES['buttons']['web']?> <i class="fa fa-external-link"></i>
+            <?=$projects_asoc[$gallery]['url_']?> <i class="fa fa-external-link"></i>
         </a>
+        <?php endif; ?>
 
         <button onclick="scroll_to('#projects-<?=$gallery?>')"><?=$MESSAGES['buttons']['project']?> <i class="fa fa-arrow-up"></i>
         </button>
