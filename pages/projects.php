@@ -167,10 +167,10 @@ foreach($projects as $project):
 
     $style=
         "z-index:".($zi+1000).";".
-        ($file?"background: url('$file');":'').
-        "background-size: cover;".
-        "background-repeat: no-repeat;".
-        "background-color: #ffffff;".
+        //($file?"background: url('$file');":'').
+        //"background-size: cover;".
+        //"background-repeat: no-repeat;".
+        "background-color: {$project['color']};".
         "position: absolute;".
         "top: ".round($top_start)."px;".
         "left: calc(50% + ".round($left/*-(($t%4)<2?-20:20)*/)."px - 131px);".
