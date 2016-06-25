@@ -150,7 +150,7 @@ foreach($projects as $project):
     $top_end=time2top($project['end']);////($timeline_start-$project['end'])/(3600*24*2)+800;
 
 
-    if($top_end>$top_start-85)$top_end=$top_start-85;
+    if($top_end>$top_start-50)$top_end=$top_start-50;
 
 
     $zi-=5;
@@ -170,11 +170,11 @@ foreach($projects as $project):
         //($file?"background: url('$file');":'').
         //"background-size: cover;".
         //"background-repeat: no-repeat;".
-        "background-color: {$project['color']};".
+        //"background-color: {$project['color']};".
         "position: absolute;".
         "top: ".round($top_start)."px;".
         "left: calc(50% + ".round($left/*-(($t%4)<2?-20:20)*/)."px - 131px);".
-        "border: 3px solid {$project['color']};".
+        //"border: 3px solid {$project['color']};".
         "display: none;";
 
 
@@ -185,7 +185,7 @@ foreach($projects as $project):
         "position: absolute;".
         "display:none;".
         "width:3px;".
-        "background-color: {$project['color']};".
+        //"background-color: {$project['color']};".
         "top: ".round($top_end+5)."px;".
         "height: ".round(abs($top_end-$top_start))."px;".
         "left: calc(50% + ".round($left+(262/2)-(($t%4)<2?40:-40))."px - 131px);".
@@ -216,7 +216,7 @@ foreach($projects as $project):
         //"padding:-10px;".
         //"border-radius:10px;".
         //"color: #00ff00;".
-        "color: {$project['color']};".
+        //"color: {$project['color']};".
         //"background-color: #ff0000;".
         "font-size: 30px;".
         "top: ".round($top_end-4)."px;".
@@ -224,88 +224,95 @@ foreach($projects as $project):
         "";
 
 
-        //$submenu[$project['key']]=$project['name'][$LANGUAGE];
+    //$submenu[$project['key']]=$project['name'][$LANGUAGE];
 
 
 
-        $is_web=isset($project['url']);
-        $is_gallery=isset($MESSAGES['galleries'][$project['key']]);
+    $is_web=isset($project['url']);
+    $is_gallery=isset($MESSAGES['galleries'][$project['key']]);
     ?>
 
 
-    <div id="projects-<?=$project['key']?>" onclick="$(this).removeClass('project-selected', 200);hash_to('#projects-<?=$project['key']?>')" class="project projects-top" style="<?=$style?>" >
-        <div>
-            <h3><?=$project['name'][$LANGUAGE]?></h3><br>
-            <?php if($role): ?><i><?=$role?></i><?php endif; ?>
-            <i><?=$startend?></i>
+    <div class="project-folder">
 
-            <div class="more">
+        <div id="projects-<?=$project['key']?>" onclick="$(this).removeClass('project-selected', 200);hash_to('#projects-<?=$project['key']?>')" class="project projects-top" style="<?=$style?>" >
+            <div>
+                <h3><?=$project['name'][$LANGUAGE]?></h3><br>
+                <?php if($role): ?><i><?=$role?></i><?php endif; ?>
+                <i><?=$startend?></i>
 
-                <?php if($is_web || $is_gallery): ?>
-                <p class="project-buttons">
-                    <?php if($is_web): ?>
-                    <a href="<?=$project['url']?>" target="<?=$target?>" class="button" >
-                        <?=$project['url_']?> <i class="fa fa-external-link"></i>
-                    </a>
+                <div class="more">
+
+                    <?php if($is_web || $is_gallery): ?>
+                        <p class="project-buttons">
+                            <?php if($is_web): ?>
+                                <a href="<?=$project['url']?>" target="<?=$target?>" class="button" >
+                                    <?=$project['url_']?> <i class="fa fa-external-link"></i>
+                                </a>
+                            <?php endif; ?>
+
+                            <?php if($is_gallery): ?>
+                                <a href="#gallery-<?=$project['key']?>" class="button">
+                                    <?=$MESSAGES['buttons']['gallery']?> <i class="fa fa-arrow-down"></i>
+                                </a>
+                            <?php endif; ?>
+
+                        </p>
                     <?php endif; ?>
 
-                    <?php if($is_gallery): ?>
-                    <a href="#gallery-<?=$project['key']?>" class="button">
-                        <?=$MESSAGES['buttons']['gallery']?> <i class="fa fa-arrow-down"></i>
-                    </a>
+
+                    <?php if(count($project['roles'])>1): ?>
+                        <table>
+                            <?php foreach($project['roles'] as $person=>$role): ?>
+                                <tr>
+                                    <th><?=$MESSAGES['projects']['roles'][$role];?>:</th>
+                                    <td>
+                                        <a
+                                            href="<?=$MESSAGES['projects']['collaborators'][$person]['url'];/*todo to calaborators*/?>"
+                                            target="_blank"
+                                        >
+                                            <?=$MESSAGES['projects']['collaborators'][$person]['name'];?>
+                                        </a>
+                                    </td>
+                                </tr>
+                            <?php endforeach; ?>
+                        </table>
                     <?php endif; ?>
 
-                </p>
-                <?php endif; ?>
-
-
-                <?php if(count($project['roles'])>1): ?>
-                <table>
-                    <?php foreach($project['roles'] as $person=>$role): ?>
-                    <tr>
-                        <th><?=$MESSAGES['projects']['roles'][$role];?>:</th>
-                        <td>
-                            <a
-                                href="<?=$MESSAGES['projects']['collaborators'][$person]['url'];/*todo to calaborators*/?>"
-                                target="_blank"
-                            >
-                                <?=$MESSAGES['projects']['collaborators'][$person]['name'];?>
-                            </a>
-                        </td>
-                    </tr>
-                    <?php endforeach; ?>
-                </table>
-                <?php endif; ?>
-
-                <p class="project-description">
-                    <?=$project['description'][$LANGUAGE]?>
-                </p>
+                    <p class="project-description">
+                        <?=$project['description'][$LANGUAGE]?>
+                    </p>
 
 
 
 
 
+
+
+
+                </div>
 
 
 
             </div>
 
 
-
         </div>
+
+
+        <a href="#projects-<?=$project['key']?>" >
+            <div class="timeline projects-top projects-pipe" style="<?=$style_t?>" ></div>
+            <div class="timeline_end projects-top projects-circle-bg" style="<?=$style_te?>" ></div>
+            <div class="timeline_end projects-top projects-circle" style="<?=$style_ted?>" >
+                <i class="fa <?=$statuses[$project['status']]?>"></i>
+            </div>
+        </a>
+
     </div>
 
 
-    <a href="#projects-<?=$project['key']?>" >
-        <div class="timeline projects-top" style="<?=$style_t?>" ></div>
-        <div class="timeline_end projects-top" style="<?=$style_te?>" ></div>
-        <div class="timeline_end projects-top" style="<?=$style_ted?>" >
-            <i class="fa <?=$statuses[$project['status']]?>"></i>
-        </div>
-    </a>
 
-
-<?php
+    <?php
 
     /**/
 
@@ -328,24 +335,24 @@ for($year=2006;$year<=date("Y");$year++):
     $top_end=time2top($end);//($timeline_start-$end)/(3600*24*2)+800;
 
     $style_y=
-    "z-index:".($zi).";".
-    "position: absolute;".
-    "display:none;".
-    "height:30px;".
-    "width: ".round(abs($top_end-$top_start))."px;".
-    ($year!=date("Y")?"border-left: 2px solid #777777;":'').
-    //"border-right: 2px solid #777777;".
-    "top: ".round($top_end+5-($top_end-$top_start)/2)."px;".
-    "right: calc(50vw - 450px - 30px);".
-    "transform: rotate(90deg);".
-    "color:#999999;".
-    "font-size:1.5em;".
-    //"vertical-align:middle;".
-    "";
+        "z-index:".($zi).";".
+        "position: absolute;".
+        "display:none;".
+        "height:30px;".
+        "width: ".round(abs($top_end-$top_start))."px;".
+        ($year!=date("Y")?"border-left: 2px solid #777777;":'').
+        //"border-right: 2px solid #777777;".
+        "top: ".round($top_end+5-($top_end-$top_start)/2)."px;".
+        "right: calc(50vw - 450px - 30px);".
+        "transform: rotate(90deg);".
+        "color:#999999;".
+        "font-size:1.5em;".
+        //"vertical-align:middle;".
+        "";
 
-?>
+    ?>
     <div class="year projects-top" style="<?=$style_y?>" ><?=$year?></div>
-<?php
+    <?php
 
 
 endfor;
@@ -365,4 +372,3 @@ $style_placeholder=
 
 
 <div class="projects-placeholder" style="<?=$style_placeholder?>" ></div>
-

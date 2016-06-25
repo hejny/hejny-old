@@ -25,6 +25,7 @@ articles:
     types:
         article: Článek
         video: Video
+        pdf: Prezentace
 
 
 

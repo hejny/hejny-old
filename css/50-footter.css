@@ -1,0 +1,41 @@
+
+footer {
+
+    z-index: 100;
+
+    display: inline-block;
+
+
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+
+
+
+    height: 30px;
+
+    background-color: #000000;
+    background: url("../data/backgrounds/menu.png");
+
+
+    padding: 5px;
+    margin: 0px;
+
+    color: #cccccc;
+    /*font-size: 1.1em;*/
+
+
+    box-shadow: rgba(0,0,0,0.5) 0px -2px 2px;
+
+    /*text-align: center;*/
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    overflow: hidden;
+
+}

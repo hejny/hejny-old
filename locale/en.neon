@@ -25,6 +25,7 @@ articles:
     types:
         article: Article
         video: Video
+        pdf: Presentation
 
 buttons:
     web: Web
