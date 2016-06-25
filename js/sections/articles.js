@@ -22,4 +22,18 @@ $(function() {
     });
 
 
+
+
+
+    $('#articles').mixItUp({
+        /*animation: {
+            animateChangeLayout: true, // Animate the positions of targets as the layout changes
+            animateResizeTargets: true, // Animate the width/height of targets as the layout changes
+            effects: 'fade rotateX(-40deg) translateZ(-100px)'
+        },*/
+        layout: {
+            containerClass: 'list' // Add the class 'list' to the container on load
+        }
+    });
+
 });

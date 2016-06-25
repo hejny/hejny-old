@@ -1,11 +1,33 @@
-    <?php
+
+
+
+<button class="filter" data-filter="all"><?=$MESSAGES['articles']['all']?></button>
+
+
+<?php foreach($MESSAGES['articles']['types'] as $key=>$value): ?>
+
+    <button class="filter" data-filter=".<?=$key?>"><?=$value[1]?></button>
+
+<?php endforeach; ?>
+
+
+
+<!--<label>Sort:</label>
+<button class="sort" data-sort="myorder:asc">Asc</button>
+<button class="sort" data-sort="myorder:desc">Desc</button>-->
+
+
+
+
+<?php
 
     $articles = Nette\Neon\Neon::decode(file_get_contents('data/articles.neon'));
 
+    $i=0;
     foreach($articles as $article):
 
 
-        $type=$MESSAGES['articles']['types'][$article['type']];
+        $type=$MESSAGES['articles']['types'][$article['type']][0];
 
         $site=parse_url($article['url']);
         $site=$site['host'];
@@ -44,7 +66,7 @@
 
 
 
-    <article>
+    <article class="mix <?=$article['type']?>" data-myorder="<?=$i?>" style="display: block;">
 
         <!--<a href="<?/*=$article['url']*/?>" target="_blank">
             <?/*=$article['title'][$LANGUAGE]*/?> <i>(<?/*=$type*/?>, <?/*=$site*/?> <i class="fa fa-external-link"></i>)</i>-->
@@ -58,14 +80,15 @@
 
                     <a href="<?=$article['url']?>" target="_blank">
                         <h3><?=$article['title'][$LANGUAGE]?></h3>
-                        <i>(<?=$type?>, <?=$site?> <i class="fa fa-external-link"></i>)</i>
+                        <i class="more">(<?=$type?>, <?=$site?> <i class="fa fa-external-link"></i>)</i>
                     </a>
 
                 <?php }else{ ?>
 
-                    <h3><?=$article['title'][$LANGUAGE]?></h3>
-                    <i>(<?=$type?>, <?=$site?>)</i>
                     <i class="fa fa-caret-square-o-up toggle"></i>
+                    <h3><?=$article['title'][$LANGUAGE]?></h3>
+                    <i class="more">(<?=$type?>, <?=$site?>)</i>
+
 
                 <?php } ?>
 
@@ -92,7 +115,9 @@
 
 
     <?php
+        $i++;
     endforeach;
+
     ?>
 
 

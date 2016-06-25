@@ -12,6 +12,39 @@
     /*border: 2px solid #777777;*/
 }
 
+
+
+
+#articles .filter{
+    background-color: #999999;
+}
+#articles .active{
+    background: #68b8c4;
+}
+
+
+
+
+#articles .mix,
+#articles .gap{
+    display: inline-block;
+    width: 100%;
+    overflow: hidden;
+}
+
+#articles .mix{
+    /*text-align: left;
+    /*background: #03899c;
+    margin-bottom: 2%;*/
+    display: none;
+}
+
+
+
+
+
+
+
 #articles article .summary{
     display: block;
     /*width: calc(100vw - 110px);
@@ -75,22 +108,24 @@
 
 
 
-/*
-#articles div:nth-child(odd) a {
+#articles article:nth-child(odd) .summary {
     background: rgba(146, 146, 146, 0.10);
 }
 
-#articles div:nth-child(even) a {
+#articles article:nth-child(even) .summary {
     background: rgba(10, 10, 10, 0.10);
 }
 
-#articles div a:hover {
+/*#articles div a:hover {
     background: rgba(10, 50, 150, 0.10);
 }*/
 
 
 
-#articles div i:not(.toggle){
+
+#articles div .more{
+
+    display: block;
 
     text-decoration: none;
     color: #999999;
