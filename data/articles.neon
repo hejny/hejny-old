@@ -4,11 +4,12 @@
     title:
         cs: "Generovaná 2D grafika na webu"
         en: "Generovaná 2D grafika na webu"
-    type: pdf
+    type: presentation
     url: "http://www.slideshare.net/PavolHejn/generovan-2d-grafika-na-webu"
     embed:
         -"//www.slideshare.net/slideshow/embed_code/key/5nkcbs1xuxWKoW"
         -"//jsfiddle.net/aknp0z71/18/embedded/"
+    date: 24.6.2016
 
 
 
@@ -17,9 +18,10 @@
     title:
         cs: "Webové aplikace v JavaScriptu"
         en: "Web applications in JavaScript"
-    type: pdf
+    type: presentation
     url: "http://www.slideshare.net/PavolHejn/webov-aplikace-v-javascriptu"
     embed: "//www.slideshare.net/slideshow/embed_code/key/I7cENTfs9uL16b"
+    date: 27.5.2016
 
 
 
@@ -31,6 +33,7 @@
         en: "Fractals"
     type: video
     url: "http://www.itnetwork.cz/zpravodajstvi/prednasky/fraktaly"
+    date: 25.9.2015
 
 
 
@@ -41,16 +44,7 @@
         en: "How does online game Towns work"
     type: video
     url: "http://www.itnetwork.cz/zpravodajstvi/prednasky/jak-funguje-online-hra-towns"
-
-
-
-
--
-    title:
-        cs: "Generátor map"
-        en: "Map generator"
-    type: article
-    url: "http://www.itnetwork.cz/php/php-aplikace-generator-map"
+    date: 26.6.2016
 
 
 
@@ -61,6 +55,21 @@
 
     type: article
     url: "http://www.itnetwork.cz/php/ostatni/php-aplikace-generator-stromu"
+    date: 1.6.2015
+
+
+
+-
+    title:
+        cs: "Generátor map"
+        en: "Map generator"
+    type: article
+    url: "http://www.itnetwork.cz/php/php-aplikace-generator-map"
+    date: 3.5.2015
+
+
+
+
 
 
 

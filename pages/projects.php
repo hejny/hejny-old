@@ -178,6 +178,7 @@ foreach($projects as $project):
         "display: none;";
 
 
+    $left_t=round($left+(262/2)-(($t%5-2)*20));
 
 
     $style_t=
@@ -188,8 +189,10 @@ foreach($projects as $project):
         //"background-color: {$project['color']};".
         "top: ".round($top_end+5)."px;".
         "height: ".round(abs($top_end-$top_start))."px;".
-        "left: calc(50% + ".round($left+(262/2)-(($t%4)<2?40:-40))."px - 131px);".
+        "left: calc(50% + ".$left_t."px - 131px);".
         "";
+
+
 
     $style_te=
         "z-index:".($zi-90+500).";".
@@ -203,7 +206,7 @@ foreach($projects as $project):
         "background-color: #ffffff;".
         //"border: 3px solid #ff0000;".
         "top: ".round($top_end+2)."px;".
-        "left: calc(50% + ".round($left+(262/2)-(($t%4)<2?40:-40)-6-3)."px - 131px);".
+        "left: calc(50% + ".$left_t."px - 143px);".
         "";
 
     $style_ted=
@@ -220,7 +223,7 @@ foreach($projects as $project):
         //"background-color: #ff0000;".
         "font-size: 30px;".
         "top: ".round($top_end-4)."px;".
-        "left: calc(50% + ".round($left+(262/2)-(($t%4)<2?40:-40)-6-7)."px - 131px);".
+        "left: calc(50% + ".$left_t."px - 143px);".
         "";
 
 

@@ -22,10 +22,17 @@ menu:
 
 
 articles:
+    all: Vše
     types:
-        article: Článek
-        video: Video
-        pdf: Prezentace
+        article:
+            - Článek
+            - Články
+        video:
+            - Video
+            - Videa
+        presentation:
+            - Prezentace
+            - Prezentace
 
 
 
