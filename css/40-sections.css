@@ -1,0 +1,54 @@
+
+
+#pages {
+
+
+    position: absolute;
+    top: 0px;
+    right:0px;
+
+
+    width: 100%;
+    min-width: 60%;
+
+
+    display: inline-block;
+
+    text-align: center;
+
+
+
+    margin: 0px;
+
+    z-index: 5;
+
+    /*border: 2px solid #ff0000;*/
+    /*background: rgba(250, 146, 146, 0.90);*/
+
+
+
+}
+
+
+
+
+.page {
+
+
+    display: block;
+
+    /*padding: 100px;*/
+
+    width: 80%;
+    max-width: 800px;
+    text-align: center;
+
+
+    padding: 0px;
+    margin: auto;
+    padding-top: 20px;
+
+    /*border: 2px solid #777777;*/
+
+
+}

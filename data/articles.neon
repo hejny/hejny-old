@@ -1,4 +1,30 @@
 
+
+-
+    title:
+        cs: "Generovaná 2D grafika na webu"
+        en: "Generovaná 2D grafika na webu"
+    type: pdf
+    url: "http://www.slideshare.net/PavolHejn/generovan-2d-grafika-na-webu"
+    embed:
+        -"//www.slideshare.net/slideshow/embed_code/key/5nkcbs1xuxWKoW"
+        -"//jsfiddle.net/aknp0z71/18/embedded/"
+
+
+
+
+-
+    title:
+        cs: "Webové aplikace v JavaScriptu"
+        en: "Web applications in JavaScript"
+    type: pdf
+    url: "http://www.slideshare.net/PavolHejn/webov-aplikace-v-javascriptu"
+    embed: "//www.slideshare.net/slideshow/embed_code/key/I7cENTfs9uL16b"
+
+
+
+
+
 -
     title:
         cs: "Fraktály"

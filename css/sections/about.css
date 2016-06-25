@@ -1,0 +1,99 @@
+
+
+
+#profile{
+
+    display: inline-block;
+
+    /*width: 150px;
+    max-width: 60%;*/
+
+    text-align: center;
+
+    /*border: 2px solid #000000;*/
+
+    /*background-color: rgba(0,0,0,0.5);
+
+    padding: 20px;
+
+    border-radius: 10px;*/
+
+}
+
+#avatar{
+
+    display: inline-block;
+
+    width: 150px;
+    max-width: 80%;
+
+
+    /*border: 2px solid #000000;*/
+    border-radius: 1000px;
+
+}
+
+
+#name {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 2em;
+    margin: 10px;
+
+
+}
+
+
+#subname{
+
+    display: inline-block;
+
+    font-size: 1.4em;
+
+    margin-bottom: 20px;
+
+
+}
+
+
+
+
+
+
+#about{
+    padding-top:10vh;
+}
+
+
+
+/*#pages .page:nth-child(odd) {
+    background: rgba(122, 29, 128, 0.50);
+}
+
+#pages .page:nth-child(even) {
+    background: rgba(57, 128, 99, 0.50);
+}*/
+
+
+
+#about_text{
+
+    display: inline-block;
+
+
+    padding: 10px;
+    margin: 0px;
+
+    text-align: justify;
+
+    background: rgba(146, 146, 146, 0.10);
+
+}
+
+#about_text a{
+
+    text-decoration: underline;
+
+}
+
+

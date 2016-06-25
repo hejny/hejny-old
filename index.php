@@ -113,7 +113,6 @@ ob_start("ob_gzhandler");
         <title><?=$MESSAGES['about']['name']?></title>
 
         <?php /*<link rel="icon" href="favicon.ico">*/ ?>
-        <link rel="stylesheet" type="text/css" href="style.css"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.2.3/css/simple-line-icons.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
@@ -121,10 +120,34 @@ ob_start("ob_gzhandler");
         <?php /*<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>*/ ?>
        <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
         <script src="https://code.jquery.com/ui/1.11.3/jquery-ui.min.js"></script>
-        <script src="main.js" async></script>
         <script>
             var timestamp=<?=time()?>;
         </script>
+
+
+
+        <?php
+
+        $files = array_merge(glob('css/*.css'),glob('css/*/*.css'));
+
+        foreach($files as $file){
+
+            echo("<link rel=\"stylesheet\" href=\"".addslashes($file)."\" type=\"text/css\">\n");
+
+        }
+
+
+
+
+        $files = array_merge(glob('js/*.js'),glob('js/*/*.js'));
+
+        foreach($files as $file){
+
+            echo("<script type=\"text/javascript\" src=\"".addslashes($file)."\"></script>\n");
+
+        }
+        ?>
+
 
 
 
