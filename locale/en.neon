@@ -22,10 +22,19 @@ menu:
 
 
 articles:
+    all: All
     types:
-        article: Article
-        video: Video
-        presentation: Presentation
+        article:
+            - Article
+            - Articles
+        video:
+            - Video
+            - Videos
+        presentation:
+            - Presentation
+            - Presentations
+
+
 
 buttons:
     web: Web

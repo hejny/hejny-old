@@ -65,7 +65,7 @@
 
 #articles article .summary h3{
 
-    display: inline-block;
+    display: block;
     margin: 0px;
     padding: 0px;
 
