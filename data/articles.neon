@@ -3,12 +3,12 @@
 -
     title:
         cs: "Generovaná 2D grafika na webu"
-        en: "Generovaná 2D grafika na webu"
+        en: "Generating 2D graphics on web"
     type: presentation
     url: "http://www.slideshare.net/PavolHejn/generovan-2d-grafika-na-webu"
     embed:
         -"//www.slideshare.net/slideshow/embed_code/key/5nkcbs1xuxWKoW"
-        -"//jsfiddle.net/aknp0z71/18/embedded/"
+        #-"//jsfiddle.net/aknp0z71/18/embedded/"
     date: 24.6.2016
 
 

@@ -71,9 +71,9 @@ button:hover {
     width: 50px;
     height: 50px;
 
-    background-color: #000000;
+    background-color: #bbb;
     /*background: url("data/backgrounds/menu.png");*/
-    background: url("http://1.gravatar.com/avatar/3d98c15957c5f5dd227e53dbc7cbb60d?s=50&r=pg&d=mm");
+    //background: url("http://1.gravatar.com/avatar/3d98c15957c5f5dd227e53dbc7cbb60d?s=50&r=pg&d=mm");
     background-size: cover;
     padding: 5px;
 

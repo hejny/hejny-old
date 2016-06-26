@@ -1,6 +1,5 @@
 
 
-
 <button class="filter" data-filter="all"><?=$MESSAGES['articles']['all']?></button>
 
 
