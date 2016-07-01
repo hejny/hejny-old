@@ -18,6 +18,13 @@
 
 
 
+
+<button class="mail" data-lists="8,10"><i class="fa fa-envelope-o" aria-hidden="true"></i></button>
+
+
+
+
+
 <?php
 
     $articles = Nette\Neon\Neon::decode(file_get_contents('data/articles.neon'));
@@ -84,7 +91,7 @@
 
                 <?php }else{ ?>
 
-                    <i class="fa fa-caret-square-o-up toggle"></i>
+                    <i class="fa fa-caret-square-o-down toggle"></i>
                     <h3><?=$article['title'][$LANGUAGE]?></h3>
                     <i class="more">(<?=$type?>, <?=$site?>)</i>
 

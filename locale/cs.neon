@@ -21,18 +21,22 @@ menu:
     contact: Kontakt
 
 
+newsletter:
+    email: Váš e-mail
+    name: Vaše jméno
+    projects: Projekty
+    submit: Odeslat
+
+
 articles:
     all: Vše
     types:
         article:
             - Článek
             - Články
-        video:
-            - Video
-            - Videa
-        presentation:
-            - Prezentace
-            - Prezentace
+        talk:
+            - Přednáška
+            - Přednášky
 
 
 
