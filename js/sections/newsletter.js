@@ -40,10 +40,11 @@ $(function() {
         r(sp_lists);
 
 
-
+        var pending=0;
         sp_lists.forEach(function(sp_target){
 
 
+            pending++;
             $.ajax({
                 url: sp_target.url,
                 type: "post",
@@ -58,6 +59,13 @@ $(function() {
 
                 },
                 complete: function (response) {
+
+                    pending--;
+                    if(pending==0){
+                        setTimeout(function(){
+                            newsletter_window.hide();
+                        },2000);
+                    }
 
                     try {
                         response = JSON.parse(response.responseText);
@@ -94,16 +102,52 @@ $(function() {
     });
 
 
+    newsletter_window.find('.close').click(function(){
+        newsletter_window.hide();
+    });
 
 
-    $('button.mail').click(function () {
+    /*$(document).click(function() {
+        newsletter_window.hide();//stop().fadeOut();
 
+    });
+    newsletter_window.click(function(e) {
+        e.stopPropagation(); // This is the preferred method.
+        return false;        // This should not be used unless you do not want
+                             // any click events registering inside the div
+    });*/
+
+
+
+
+
+
+
+    $('button.newsletter').click(function (e) {
+
+        e.preventDefault();
 
         var lists = $(this).attr('data-lists');
         lists = lists.split(',');
         r(lists);
 
-        newsletter_window.show();
+
+        newsletter_window.find('.sendpress-list').parent().removeClass('error').removeClass('success').removeClass('loading');
+        newsletter_window.find('.sendpress-list').each(function(){
+
+            var $this = $(this);
+            var list = $this.attr('data-list');
+            r(list);
+            $this.prop('checked', lists.indexOf(list)!==-1);
+
+        });
+
+
+
+        setTimeout(function(){
+            newsletter_window.show();//.stop().slideDown();
+        },50);
+
 
 
 
@@ -116,13 +160,18 @@ $(function() {
         var offset = $this.offset();
 
         newsletter_window.css('position', 'absolute');
-        newsletter_window.css('top', offset.top-(-$this.outerHeight()));
-        newsletter_window.css('left',offset.left-(width*0.8)+$this.outerWidth()/2-7);
+        newsletter_window.css('top', offset.top-(-$this.outerHeight())+10);
+
+        var left = offset.left-(width*0.8)+$this.outerWidth()/2;
+        if(left<0)left=0;
+        newsletter_window.css('left',left);
 
 
         //r($newsletter_window);
         //window_open($newsletter_window);
 
+
+        return false;
 
     });
 

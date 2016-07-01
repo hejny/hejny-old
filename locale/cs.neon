@@ -22,8 +22,11 @@ menu:
 
 
 newsletter:
+    button: Novinky
+    info: "Chcete vědět jako první např. o mé přednášce na ITNetwork nebo něco o konkrétním projektu? Zde se můžete přihlásit k tomu, co vás zajímá:"
     email: Váš e-mail
     name: Vaše jméno
+    taa: Články + Přednášky
     projects: Projekty
     submit: Odeslat
 

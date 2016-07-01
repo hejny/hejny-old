@@ -151,7 +151,7 @@ foreach($projects as $project):
 
                 <div class="more">
 
-                    <?php if($is_web || $is_gallery): ?>
+                    <?php if($is_web || $is_gallery || $project['sendpress_list']): ?>
                         <p class="project-buttons">
                             <?php if($is_web): ?>
                                 <a href="<?=$project['url']?>" target="<?=$target?>" class="button" >
@@ -164,6 +164,15 @@ foreach($projects as $project):
                                     <?=$MESSAGES['buttons']['gallery']?> <i class="fa fa-arrow-down"></i>
                                 </a>
                             <?php endif; ?>
+
+
+                            <?php if($project['sendpress_list']): ?>
+                                <button class="newsletter" data-lists="<?=$project['sendpress_list']?>">
+                                    <?=$MESSAGES['newsletter']['button']?>
+                                    <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                                </button>
+                            <?php endif; ?>
+
 
                         </p>
                     <?php endif; ?>

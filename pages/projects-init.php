@@ -70,6 +70,34 @@ foreach($projects_asoc as $name=>&$project){
 
 
 
+
+    if($project['sendpress']){
+
+        //print_r($project['sendpress']);echo('<hr>');
+
+        if(is_numeric($project['sendpress'])){
+
+
+            $url = 'http://blog.pavolhejny.com/blog/';
+            $list = $project['sendpress'];
+
+        }elseif(is_array($project['sendpress'])){
+
+            $url = $project['sendpress']['url'];
+            $list = $project['sendpress']['list'];
+
+        }
+
+    }else{
+        $url = false;
+        $list = false;
+
+    }
+    $project['sendpress_url']=$url;
+    $project['sendpress_list']=$list;
+
+
+
     $projects[]=$project;
 }
 
