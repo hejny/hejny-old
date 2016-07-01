@@ -4,7 +4,7 @@
     title:
         cs: "Generovaná 2D grafika na webu"
         en: "Generating 2D graphics on web"
-    type: presentation
+    type: talk
     url: "http://www.slideshare.net/PavolHejn/generovan-2d-grafika-na-webu"
     embed:
         -"//www.slideshare.net/slideshow/embed_code/key/5nkcbs1xuxWKoW"
@@ -18,7 +18,7 @@
     title:
         cs: "Webové aplikace v JavaScriptu"
         en: "Web applications in JavaScript"
-    type: presentation
+    type: talk
     url: "http://www.slideshare.net/PavolHejn/webov-aplikace-v-javascriptu"
     embed: "//www.slideshare.net/slideshow/embed_code/key/I7cENTfs9uL16b"
     date: 27.5.2016
@@ -31,7 +31,7 @@
     title:
         cs: "Fraktály"
         en: "Fractals"
-    type: video
+    type: talk
     url: "http://www.itnetwork.cz/zpravodajstvi/prednasky/fraktaly"
     date: 25.9.2015
 
@@ -42,7 +42,7 @@
     title:
         cs: "Jak funguje online hra Towns"
         en: "How does online game Towns work"
-    type: video
+    type: talk
     url: "http://www.itnetwork.cz/zpravodajstvi/prednasky/jak-funguje-online-hra-towns"
     date: 26.6.2016
 

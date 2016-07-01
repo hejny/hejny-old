@@ -34,34 +34,30 @@ $language_names=array(
 $languages=array('en','cs');
 
 
-$language_uri = substr($_SERVER['REQUEST_URI'],-2);
-$language_headers = strtolower(substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 2));
 
 
-if(in_array($language_uri,$languages)){
-
-    $LANGUAGE=$language_uri;
-
-}elseif(in_array($language_headers,$languages)){
-
-    $LANGUAGE=$language_headers;
-
+if(substr($_SERVER['HTTP_HOST'],-3)==='.cz'){
+	$LANGUAGE='cs';
+}elseif(substr($_SERVER['HTTP_HOST'],-3)==='.com'){
+	$LANGUAGE='en';
 }else{
-
-    $LANGUAGE=$languages[0];
-
+    //echo('other lang');
+	$LANGUAGE='cs';
 }
 
-//echo($LANGUAGE);
 
 
 //----------------------------------------redirect
 
-$url=$config['base_url'].$LANGUAGE;
+if($_SERVER['REQUEST_URI']!='/' && $_SERVER['HTTP_HOST']!='localhost'){
+	header('Location: http://'.$_SERVER['HTTP_HOST'].'/');
+    exit;
+}
+/*$url=$config['base_url'];
 if('http://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']!=$url){
     header('Location: '.$url);
     exit;
-}
+}*/
 
 
 //----------------------------------------load $MESSAGES
@@ -181,6 +177,10 @@ ob_start("ob_gzhandler");
     <body>
 
 
+    <?php
+        require("pages/projects-init.php");
+        require("pages/newsletter.php");
+    ?>
 
 
     <main id="pages" >
@@ -269,9 +269,11 @@ ob_start("ob_gzhandler");
 
         <div id="languages" >
 
-            <?php foreach($languages as $language): ?>
-                <a href="./<?=$language?>" class="<?=$language==$LANGUAGE?'selected':''?>"><img src="locale/<?=$language?>.png" alt="<?=$language?> flag" title="<?=$language_names[$language]?>"></a>
-            <?php endforeach; ?>
+			<a href="http://pavolhejny.com" class="<?='en'==$LANGUAGE?'selected':''?>"><img src="locale/en.png" alt="en flag" title="<?=$language_names['en']?>"></a>
+
+            <a href="http://pavolhejny.cz" class="<?='cs'==$LANGUAGE?'selected':''?>"><img src="locale/cs.png" alt="cs flag" title="<?=$language_names['cs']?>"></a>
+
+
 
         </div>
     </nav>

@@ -27,12 +27,9 @@ articles:
         article:
             - Article
             - Articles
-        video:
-            - Video
-            - Videos
-        presentation:
-            - Presentation
-            - Presentations
+        talk:
+            - Talk
+            - Talks
 
 
 

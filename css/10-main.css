@@ -39,7 +39,7 @@ button:hover {
 
 
 
-.button {
+.input[type="submit"] {
     display: inline-block;
     border: none;
     padding: 0 10px;
@@ -52,7 +52,7 @@ button:hover {
     background-color: #0098ff;
     color: white;
     cursor: pointer; }
-.button:hover {
+.input[type="submit"]:hover {
     background-color: #37beff; }
 
 
