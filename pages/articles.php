@@ -19,7 +19,7 @@
 
 
 
-<button class="newsletter" data-lists="8,10">
+<button class="newsletter" data-lists="17,18">
     <?=$MESSAGES['newsletter']['button']?>
     <i class="fa fa-envelope-o" aria-hidden="true"></i>
 </button>

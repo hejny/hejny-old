@@ -110,7 +110,7 @@ towers:
         cs: Věže
         en: Towers
 
-    sendpress: 11
+    sendpress: 22
     description:
         cs: 'Desková stavební hra hraná v reálném čase. Ještě ne zcela dokončený projekt.'
         en: ''
@@ -130,7 +130,7 @@ logic:
         cs: Logic
         en: Logic
 
-    sendpress: 12
+    sendpress: 24
     description:
         cs: 'Logická bludišťová plošinovka pro známé programovatelné kalkulačky TI-89. Součástí hry je i editor a mnoho vytvořených úrovní.'
         en: ''
@@ -152,7 +152,7 @@ kunraticky-les:
         cs: Kunratický les
         en: Kunratický les
 
-    sendpress: 13
+    sendpress: 23
     description:
         cs: 'Přes 500 propojených 360° snímků z Kunratického lesa z jara 2010.'
         en: ''
@@ -173,7 +173,7 @@ fractals:
         cs: Fraktály
         en: Fractals
 
-    sendpress: 14
+    sendpress: 19
     description:
         cs: 'Generátor fraktálů odvozených z Mandelbrotovi množiny.'
         en: ''
@@ -193,7 +193,7 @@ graph:
         cs: 3D Graf
         en: 3D Graph
 
-    sendpress: 15
+    sendpress: 20
     description:
         cs: '2D / 3D program pro vykreslování grafů jedné nebo dvou funkcí. Netradiční možnost dynamicky měnit barvu a tloušťku čas podle vzorce.'
         en: ''
@@ -214,7 +214,7 @@ drawing:
         cs: Kreslení
         en: Drawing
 
-    sendpress: 16
+    sendpress: 21
     description:
         cs: 'Jednoduchý kreslící bitmapový program s několika speciálními funkcemi např. paprsčité kreslení čar a obdélníků nebo kreslení pomocí textu.'
         en: ''
