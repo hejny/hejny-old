@@ -9,8 +9,6 @@
     <p class="info"><?=$MESSAGES['newsletter']['info']?></p>
 
     <form method="post" action="">
-        <input type="hidden" name="sp_list" value="8"/>
-        <input type="hidden" name="sendpress" value="post" />
         <div id="form-wrap">
             <p class="field-group">
                 <label for="email"><?=$MESSAGES['newsletter']['email']?>:* </label>
@@ -29,14 +27,14 @@
                     <i class="loading-icon fa fa-cog fa-spin fa-fw" aria-hidden="true"></i>
                     <i class="success-icon fa fa-check-circle" aria-hidden="true"></i>
                     <i class="error-icon fa fa-exclamation-circle" aria-hidden="true"></i>
-                    <input type="checkbox" data-url="http://blog.pavolhejny.com/blog/" class="sendpress-list" data-list="8">
+                    <input type="checkbox" data-url="http://blog.pavolhejny.com/blog/" class="sendpress-list" data-list="17">
                     <?=$MESSAGES['articles']['types']['talk'][1]?>
                 </label>
                 <label class="sendlist">
                     <i class="loading-icon fa fa-cog fa-spin fa-fw" aria-hidden="true"></i>
                     <i class="success-icon fa fa-check-circle" aria-hidden="true"></i>
                     <i class="error-icon fa fa-exclamation-circle" aria-hidden="true"></i>
-                    <input type="checkbox" data-url="http://blog.pavolhejny.com/blog/" class="sendpress-list" data-list="10">
+                    <input type="checkbox" data-url="http://blog.pavolhejny.com/blog/" class="sendpress-list" data-list="18">
                     <?=$MESSAGES['articles']['types']['article'][1]?>
                 </label>
             </fieldset>
