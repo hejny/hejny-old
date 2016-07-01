@@ -21,6 +21,16 @@ menu:
     contact: Contact
 
 
+newsletter:
+    button: News
+    info: ""
+    email: Your e-mail
+    name: Your name
+    taa: Articles + Talks
+    projects: Projects
+    submit: Send
+
+
 articles:
     all: All
     types:
