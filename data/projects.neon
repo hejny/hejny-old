@@ -7,7 +7,6 @@ towns5:
         cs: Towns 5
         en: Towns 5
 
-    color: '#0098ff'
     sendpress:
         url: http://blog.towns.cz/
         list: 1390
@@ -32,7 +31,6 @@ towns4:
         cs: Towns 4
         en: Towns 4
 
-    color: '#0098ff'
     description:
         cs: 'Dlouho běžící online hra s izometrickou mapou. 3D budovami, spojováním budov a příběhy ve hře.'
         en: ''
@@ -54,7 +52,6 @@ towns3:
         cs: Towns 3
         en: Towns 3
 
-    color: '#0098ff'
     description:
         cs: 'Nedokončený projekt ve Flashy.'
     roles:
@@ -73,7 +70,6 @@ towns2:
         cs: Towns 2
         en: Towns 2
 
-    color: '#0098ff'
     description:
         cs: 'Druhá verze s izometrickou mapou, vylepšeným designem, vygenerovaným ostrovem 200x200 políček.'
         en: ''
@@ -93,7 +89,6 @@ towns1:
         cs: Towns 1
         en: Towns 1
 
-    color: '#0098ff'
     description:
         cs: 'První ze série her Towns. Jednoduchá strategická hra s 2D mapou 100x100 políček. '
         en: ''
@@ -115,7 +110,6 @@ towers:
         cs: Věže
         en: Towers
 
-    color: '#FFA826'
     sendpress: 11
     description:
         cs: 'Desková stavební hra hraná v reálném čase. Ještě ne zcela dokončený projekt.'
@@ -136,7 +130,6 @@ logic:
         cs: Logic
         en: Logic
 
-    color: '#777777'
     sendpress: 12
     description:
         cs: 'Logická bludišťová plošinovka pro známé programovatelné kalkulačky TI-89. Součástí hry je i editor a mnoho vytvořených úrovní.'
@@ -159,7 +152,6 @@ kunraticky-les:
         cs: Kunratický les
         en: Kunratický les
 
-    color: '#6CC424'
     sendpress: 13
     description:
         cs: 'Přes 500 propojených 360° snímků z Kunratického lesa z jara 2010.'
@@ -181,7 +173,6 @@ fractals:
         cs: Fraktály
         en: Fractals
 
-    color: '#000000'
     sendpress: 14
     description:
         cs: 'Generátor fraktálů odvozených z Mandelbrotovi množiny.'
@@ -202,7 +193,6 @@ graph:
         cs: 3D Graf
         en: 3D Graph
 
-    color: '#1A2BEF'
     sendpress: 15
     description:
         cs: '2D / 3D program pro vykreslování grafů jedné nebo dvou funkcí. Netradiční možnost dynamicky měnit barvu a tloušťku čas podle vzorce.'
@@ -224,7 +214,6 @@ drawing:
         cs: Kreslení
         en: Drawing
 
-    color: '#1A2BEF'
     sendpress: 16
     description:
         cs: 'Jednoduchý kreslící bitmapový program s několika speciálními funkcemi např. paprsčité kreslení čar a obdélníků nebo kreslení pomocí textu.'
@@ -246,7 +235,6 @@ avif-mobile:
         cs: Avif Mobile
         en: Avif Mobile
 
-    color: '#ABC0E1'
     description:
         cs: 'Mobilní aplikace pro AviFaunistickou databázi ČR. Projekt České společnosti ornitologické'
         en: ''
@@ -270,7 +258,6 @@ avif:
         cs: Avif
         en: Avif
 
-    color: '#ABC0E1'
     description:
         cs: 'AviFaunistická databáze ČR, Projekt České společnosti ornitologické'
         en: ''
@@ -293,7 +280,6 @@ cso-hry:
         en: Birds in cities
 
 
-    color: '#ABC0E1'
     description:
         cs: '3 jednoduché minihry pro Českou společnost ornitologickou'
         en: ''
@@ -315,7 +301,6 @@ bezpecne-zastavky:
         cs: Bezpečné zastávky
         en: Safe stops
 
-    color: '#ABC0E1'
     description:
         cs: 'Projekt České společnosti ornitologické'
         en: ''

@@ -77,6 +77,18 @@ foreach($folders as $folder):
             </button>
         <?php endif; ?>
 
+
+
+        <?php if($projects_asoc[$gallery]['sendpress_list']): ?>
+            <button class="newsletter" data-lists="<?=$projects_asoc[$gallery]['sendpress_list']?>">
+                <?=$MESSAGES['newsletter']['button']?>
+                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+            </button>
+        <?php endif; ?>
+
+
+
+
     </p>
 
     <?php

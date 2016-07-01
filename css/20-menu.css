@@ -15,8 +15,8 @@
     width: 100%;
     height: 30px;
 
-    background-color: #000000;
-    background: url("../data/backgrounds/menu.png");
+    background-color: #000;
+    background: #000 url("../data/backgrounds/menu.png");
 
 
     padding: 5px;
