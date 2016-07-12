@@ -38,7 +38,7 @@ $languages=array('en','cs');
 
 if(substr($_SERVER['HTTP_HOST'],-3)==='.cz'){
 	$LANGUAGE='cs';
-}elseif(substr($_SERVER['HTTP_HOST'],-3)==='.com'){
+}elseif(substr($_SERVER['HTTP_HOST'],-4)==='.com'){
 	$LANGUAGE='en';
 }else{
     //echo('other lang');
