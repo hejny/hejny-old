@@ -108,6 +108,13 @@ ob_start("ob_gzhandler");
 
         <title><?=$MESSAGES['about']['name']?></title>
 
+
+
+        <link rel="shortcut icon" href="http://1.gravatar.com/avatar/3d98c15957c5f5dd227e53dbc7cbb60d?s=64&r=pg&d=mm ?>" />
+
+
+
+
         <?php /*<link rel="icon" href="favicon.ico">*/ ?>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.2.3/css/simple-line-icons.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
