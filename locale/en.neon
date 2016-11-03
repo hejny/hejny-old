@@ -71,7 +71,7 @@ projects:
             url: 'http://dave-shino.deviantart.com/'
         longhorn:
             name: 'Přemysl Černý'
-            url: 'http://blog.towns.cz/author/longhorn/'
+            url: 'http://vindove.cz/'
         sk:
             name: 'Štefan Kecskés'
             url: 'https://www.skey.uk'
@@ -110,10 +110,11 @@ projects:
 about:
     name: Pavol Hejný
     subname: 'Web app developer'
-    text: 'My name is Pavol Hejný live in Prague (Czech Republic). In the present I am working in the <a href="http://www.cso.cz/" target="_blank">Czech Society for Ornithology</a> as a programmer. I am also creating a series of Towns games. I am currently working on the next version <a href="http://towns.cz/" target="_blank">Towns5</a>. I also created a board game Towers. Sometimes i <a href="#articles" >talk about my activities or write an article</a>.'
+    text: 'My name is Pavol Hejný live in Prague (Czech Republic). In the present I am working in the <a href="http://www.cso.cz/" target="_blank">Czech Society for Ornithology</a> as a programmer. I am interested in 3D graphics and games on the web (<a href="http://webappgames.com/" target="_blank">WebAppGames.com</a>). I also created a board game Towers. Sometimes i <a href="#articles" >talk about my activities or write an article</a>.'
 
 
 galleries:
+    logic: Logic
     drawing: Drawing
     aliasing: Aliasing
     fractals: Fractals

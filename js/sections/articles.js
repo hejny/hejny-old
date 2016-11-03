@@ -4,7 +4,11 @@ $(function() {
 
     $('#articles article .summary').click(function () {
 
+
+
         var details = $(this).parent().find('.details');
+        //r(details);
+
 
         if(details.length>0) {
 

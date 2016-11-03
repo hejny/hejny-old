@@ -1,5 +1,21 @@
 
 
+
+
+-
+    title:
+        cs: "Web App Games"
+        en: "Web App Games"
+    type: talk
+    url: "http://www.slideshare.net/PavolHejn/web-app-games"
+    embed:
+        -"//www.slideshare.net/slideshow/embed_code/key/4UACJkubrTz30u"
+        #-"//jsfiddle.net/aknp0z71/18/embedded/"
+    date: 3.11.2016
+
+
+
+
 -
     title:
         cs: "Generovaná 2D grafika na webu"
@@ -44,7 +60,7 @@
         en: "How does online game Towns work"
     type: talk
     url: "http://www.itnetwork.cz/zpravodajstvi/prednasky/jak-funguje-online-hra-towns"
-    date: 26.6.2016
+    date: 26.6.2015
 
 
 

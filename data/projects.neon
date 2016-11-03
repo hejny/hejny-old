@@ -1,6 +1,85 @@
 
 
 
+skydreamgame:
+    name:
+        cs: Sky dream game
+        en: Sky dream game
+
+
+    description:
+        cs: ''
+        en: 'The player wakes up in a heavenly realm and his goal is to choose a path upon a spider web and solve logical puzzles that present themselves during the way. All possible ways lead to a great castle on clouds. The puzzles include logical keys and teleportation. During the game the player also learns more about his story. '
+
+    roles:
+        ph: creator
+        longhorn: creator
+
+
+
+    start: '10.2016'
+    status: working
+
+    url: skydreamgame.com
+
+
+
+
+
+
+webappgames:
+    name:
+        cs: Web app games
+        en: Web app games
+
+    sendpress:
+        url: http://blog.webappgames.com/
+        list: 81
+    description:
+         cs: 'Hry vyrobené jako plnohodnotné www aplikace.'
+         en: 'Games as full-fledged web applications that can be played instantly without installation or manual downloading. '
+
+    roles:
+        ph: creator
+        longhorn: creator
+
+
+
+    start: '10.2016'
+    status: working
+
+    url: webappgames.com
+
+
+
+
+
+
+
+logic:
+    name:
+        cs: Logic
+        en: Logic
+
+
+    description:
+        cs: ''
+        en: ''
+
+    roles:
+        ph: creator
+
+
+
+    start: '7.2016'
+    end: '9.2016'
+    status: done
+
+    url: 'http://www.itnetwork.cz/nezarazene/programatorska-soutez-geekwork-2016/hra-monster-canvas/'
+
+
+
+
 
 towns5:
     name:
@@ -22,7 +101,7 @@ towns5:
 
 
     start: '6.2015'
-    status: working
+    status: paused
 
     url: towns.cz
 
@@ -125,7 +204,7 @@ towers:
     status: paused
 
 
-logic:
+logic-ti89:
     name:
         cs: Logic
         en: Logic
@@ -271,6 +350,28 @@ avif:
     status: working
 
     url: birds.cz
+
+
+
+new-avif:
+    name:
+        cs: Nový Avif
+        en: New Avif
+
+    description:
+        cs: 'Nový frontend AviFaunistická databáze ČR, Projekt České společnosti ornitologické'
+        en: ''
+
+
+    roles:
+        ph: creator
+
+    start: '6.2016'
+
+    status: working
+
+    url: birds.cz
+
 
 
 

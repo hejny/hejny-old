@@ -149,7 +149,7 @@ windowResize = function() {
 
         //console.log('resizing');
 
-        var top = $('.projects-placeholder').offset().top - (-100);
+        var top = $('.projects-placeholder').offset().top/1 + 200 ;//- (-100);
         $('.projects-top').css('top', '+=' + (top-lastTop));
         $('.projects-top').show();
 
