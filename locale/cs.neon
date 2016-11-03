@@ -68,7 +68,7 @@ projects:
             url: 'http://dave-shino.deviantart.com/'
         longhorn:
             name: 'Přemysl Černý'
-            url: 'http://blog.towns.cz/author/longhorn/'
+            url: 'http://vindove.cz/'
         sk:
             name: 'Štefan Kecskés'
             url: 'https://www.skey.uk'
@@ -102,10 +102,11 @@ projects:
 about:
     name: Pavol Hejný
     subname: 'Vývojář www aplikací'
-    text: 'Jmenuji se Pavol Hejný, žiju v Praze a zabývám se programováním. V současnosti pracuji v <a href="http://www.cso.cz/" target="_blank">České společnosti ornitologické</a> jako programátor, kde vytvářím aplikace pro sledování a vyhodnocování ptačí populace v ČR. Také programuji sérii her Towns. Momentálně pracuji na další verzi (<a href="http://towns.cz/" target="_blank">Towns5</a>). Také jsem vytvořil deskovou hru Věže. Občas mám o své činnosti <a href="#articles" >přednášku či napíšu článek</a>. '
+    text: 'Jmenuji se Pavol Hejný, žiju v Praze a zabývám se programováním. V současnosti pracuji v <a href="http://www.cso.cz/" target="_blank">České společnosti ornitologické</a> jako programátor, kde vytvářím aplikace pro sledování a vyhodnocování ptačí populace v ČR. Zajímám se o 3D grafiku na webu a vyrábím aplikace na pomezí klasických www stránek a her (<a href="http://webappgames.com/" target="_blank">WebAppGames.com</a>). Také jsem vytvořil deskovou hru Věže. Občas mám o své činnosti <a href="#articles" >přednášku či napíšu článek</a>. '
 
 
 galleries:
+    logic: Logic
     drawing: Kreslení
     aliasing: Aliasing
     fractals: Fraktály
