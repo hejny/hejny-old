@@ -96,12 +96,23 @@
         $more = array();
 
 
-        $more[] = $type;
+        if($article['type']=='talk'){
+            $more[] = '<i class="fa fa-comment-o" aria-hidden="true" title="'.$type.'"></i>';
+        }else
+        if($article['type']=='article'){
+            $more[] = '<i class="fa fa-file-text-o" aria-hidden="true" title="'.$type.'"></i>';
+        }
+        //$more[] = $type;
         $more[] = $article['date'];
         $more[] = $where;
 
 
         $more = implode(' | ',$more);
+
+
+
+
+
         ?>
 
             <div class="summary">
