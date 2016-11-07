@@ -81,22 +81,44 @@
             <?/*=$article['title'][$LANGUAGE]*/?> <i>(<?/*=$type*/?>, <?/*=$site*/?> <i class="fa fa-external-link"></i>)</i>-->
 
 
+        <?php
 
+
+        if(isset($article['event'])){
+            $where = $article['event'];
+        }else{
+            $where = $site;
+        }
+
+
+
+
+        $more = array();
+
+
+        $more[] = $type;
+        $more[] = $article['date'];
+        $more[] = $where;
+
+
+        $more = implode(' | ',$more);
+        ?>
 
             <div class="summary">
 
                 <?php if(!isset($article['content'])){ ?>
 
+                    <i class="fa fa-external-link icon" title="<?=$site?>"></i>
                     <a href="<?=$article['url']?>" target="_blank">
                         <h3><?=$article['title'][$LANGUAGE]?></h3>
-                        <i class="more">(<?=$type?>, <?=$site?> <i class="fa fa-external-link"></i>)</i>
+                        <i class="more"><?=$more?></i>
                     </a>
 
                 <?php }else{ ?>
 
-                    <i class="fa fa-caret-square-o-down toggle"></i>
+                    <i class="fa fa-caret-square-o-down icon toggle"></i>
                     <h3><?=$article['title'][$LANGUAGE]?></h3>
-                    <i class="more">(<?=$type?>, <?=$site?>)</i>
+                    <i class="more"><?=$more?></i>
 
 
                 <?php } ?>
